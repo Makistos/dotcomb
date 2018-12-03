@@ -21,29 +21,10 @@ HEADER: >
 FOOTER: >
     }
 
-LEGEND: >
-                { rank=same; 0 [style=invis] }
-                edge [style=invis];
-                fontcolor=black;
-                infobar -> banners -> widget -> dom_distiller -> accessibility -> signin -> sync
-                -> appmenu -> GUI -> other;
-                infobar [label=infobar, color=blue1, style=filled, fontsize=24];
-                banners [label=banners, color=blueviolet, style=filled, fontsize=24];
-                widget [label=widget, color=coral3, style=filled, fontsize=24];
-                dom_distiller [label=dom_distiller, color=darkolivegreen,
-                style=filled, fontsize=24];
-                accessibility [label=accessibility, color=dodgerblue4, style=filled, fontsize=24];
-                signin [label=signin, color=gold, style=filled, fontsize=24];
-                sync [label=sync, color=azure3, style=filled, fontsize=24];
-                appmenu [label=appmenu, color=aquamarine3, style=filled,
-                fontsize=24];
-                GUI [label=GUI, color=red, style=filled, fontsize=24];
-                other [label=Other, color=white, style=filled, fontsize=24];
 
-FILTERED_FIELDS:
-    [URL]
+FILTERED_FIELDS: [URL]
 
-FILTERED_RE_NODES: 
+FILTERED_RE_NODES: []
 
 FILTERED_EXACT_NODES: [String, int, File, Boolean, boolean, Date,
                         long, Object, short, double, byte, float]

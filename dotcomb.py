@@ -21,7 +21,7 @@ settings = {}
 def pkg_name(x):
     """
     Returns matching clustering value or empty string is string doesn't
-    match with pattern.
+    match pattern.
     """
     p = re.findall(settings['GROUP_RE_PATTERN'], x)
     if p:
@@ -29,13 +29,15 @@ def pkg_name(x):
     else:
         return ''
 
+
 def read_params(args):
+    """ Handle command-line parameters."""
     p = argparse.ArgumentParser()
-    p.add_argument('--filter', '-f', help='Filter graph', action='store_true',
+    p.add_argument('--filter', '-f', help='Filter graph.', action='store_true',
             default=False)
-    p.add_argument('--cluster', '-c', help='Cluster packages together',
+    p.add_argument('--cluster', '-c', help='Cluster packages together.',
             action='store_true', default=False)
-    p.add_argument('--directory', '-d', help='Work directory, output is then '
+    p.add_argument('--directory', '-d', help='Work directory. Output is '
             'to stdout.', default='./');
     return vars(p.parse_args(args))
 
@@ -47,14 +49,12 @@ def show_node(node_label):
     FILTERED_EXACT_NODES (exact string match).
     """
     if params['filter'] == True:
-        if not settings['FILTERED_RE_NODES'] is None:
-            if len([x for x in settings['FILTERED_RE_NODES'] if node_label.find(x)
-                != -1]) > 0:
-                return False
-        if not settings['FILTERED_EXACT_NODES'] is None:
-            if node_label in settings['FILTERED_EXACT_NODES']:
-                return False
-            return True
+        if len([x for x in settings['FILTERED_RE_NODES'] if node_label.find(x)
+            != -1]) > 0:
+            return False
+        if node_label in settings['FILTERED_EXACT_NODES']:
+            return False
+        return True
     else:
         return True
 
@@ -71,10 +71,9 @@ def set_params(node):
             node['color'] = settings['PACKAGE_COLORS'][pkg]
             found = True
     if not settings['PROBLEM_NODES'] is None:
-        for n in settings['PROBLEM_NODES']:
-            if node['label'].find(n) != -1:
-                node['color'] = settings['PACKAGE_COLORS']['problem']
-                found = True
+        if len([x for x in settings['PACKAGE_COLORS'] if node['label'].find(x)]) > 0:
+            node['color'] = settings['PACKAGE_COLORS']['problem']
+            found = True
     if found == False:
         node['color'] = settings['PACKAGE_COLORS']['other']
     group = pkg_name(node['label'])
@@ -87,19 +86,16 @@ def has_edges(node_label):
     Checks if given node name has any edges. Nodes with no edges are not added
     to the graph.
     """
-    found = False
-    for k in edges.keys():
-        if (k[0] == node_label or k[1] == node_label):
-            found = True
-    return found
+    return len([
+        k for k in edges.keys() if k[0] == node_label or k[1] == node_label]) > 0
 
 
 def create_node(node):
     """
-    Creates the nodes as a data structure where the key is the node label
-    and the value is a dictionary holding all the other values. This function
-    also updates the file_mappings dictionary that is used to convert NodeXX
-    to node label.
+    Creates the nodes as a data structure where key is the node label
+    and value is a dictionary holding all the other values. This function
+    also updates the file specific file_mappings dictionary that is used to convert NodeXX
+    to node label (these are different for each file).
     """
     d = {}
     v = ''
@@ -113,12 +109,15 @@ def create_node(node):
             d[k] = v
     if 'fillcolor' in d:
         del d['fillcolor']
-    #del d['style']
     set_params(d)
     if not node.group(1) in file_mappings:
         file_mappings[node.group(1)] = d['label']
     if not d['label'] in nodes and show_node(d['label']):
         nodes[d['label']] = d
+
+
+edge_exists = lambda node1, node2: (node1, node2) in edges or (node2,
+    node1) in edges
 
 
 def create_edge(edge):
@@ -139,10 +138,11 @@ def create_edge(edge):
         k = parts[0].lstrip()
         v = parts[1].lstrip()
         d[k] = v
-    n1 = file_mappings[edge.group(1)]
-    n2 = file_mappings[edge.group(2)]
-    if not ((n1, n2) in edges or (n2, n1) in edges) and show_node(n1) and show_node(n2):
-        edges[(n1, n2)] = d
+    if edge.group(1) in file_mappings and edge.group(2) in file_mappings:
+        n1 = file_mappings[edge.group(1)]
+        n2 = file_mappings[edge.group(2)]
+        if (not (edge_exists(n1, n2))) and show_node(n1) and show_node(n2):
+            edges[(n1, n2)] = d
 
 
 def print_node(key, node):
@@ -153,7 +153,9 @@ def print_node(key, node):
         print("\t{}\n\t\t[{}];\n".format(key, ',\n\t\t'.join([key+'='+v for
             key,v in node[1].items()])))
 
+
 cluster = 0
+
 
 def print_subgraph(k, g):
     """
@@ -198,6 +200,18 @@ def print_edges():
             k,v2 in v.items()])))
 
 
+def print_legend(components):
+    print('\t{ rank=same; 0 [style=invis] }'
+                '\n\tedge [style=invis];'
+                '\n\tfontcolor=black;\n')
+    nodes = ' -> '.join(sorted(components)).replace('.', '')
+    print('\t{};'.format(nodes))
+    for c in sorted(components):
+        component = c.replace('.', '')
+        print('\t{} [label={}, color={}, style=filled, fontsize=24];'
+                .format(component, component, components[c]))
+
+
 def main(argv):
     global params
     global settings
@@ -230,8 +244,8 @@ def main(argv):
     print("{}".format(settings['HEADER']))
     print_nodes()
     print_edges()
-    if params['cluster'] == False:
-        print(settings['LEGEND'])
+    if params['cluster'] == False and 'PACKAGE_COLORS' in settings:
+        print_legend(settings['PACKAGE_COLORS'])
     print("{}".format(settings['FOOTER']))
 
 
