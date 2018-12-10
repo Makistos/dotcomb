@@ -27,11 +27,7 @@ See the example file (chromium.png) for an example.
 Edit the supplied Doxyfile to suit your needs but make sure HAVE_DOT and
 COLLABORATION_GRAPH settings are set to YES and DOT_CLEANUP to NO.
 
-Use this Doxyfile to generate the documentation. After that run 
-
-    for i in `find . -name "*__coll*.dot` | do dot -Tcanon -o /tmp/project/dots$(basename $i) $i; done
-
-This will collect all the collaboration graph definitions into one place and convert them into canonical form which is easier to handle. You can obviously use any output directory. 
+Use this Doxyfile to generate the documentation. 
 
 After this all that is needed is to run this tool:
 

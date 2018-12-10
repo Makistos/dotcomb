@@ -13,592 +13,165 @@ node [fontname=Helvetica,
     labelfontsize=8
 ];
 
-	"AdapterView::OnItemClick\lListener"
+	"Activity"
 		[color=white,
 		height=0.2,
-		label="AdapterView::OnItemClick\lListener",
-		style=filled,
+		label="Activity",
+		style="filled",
 		width=0.4];
 
-	"AdapterView::OnItemSelected\lListener"
+	"AnimatorListenerAdapter"
 		[color=white,
 		height=0.2,
-		label="AdapterView::OnItemSelected\lListener",
-		style=filled,
+		label="AnimatorListenerAdapter",
+		style="filled",
 		width=0.4];
 
-	"android::accounts::\lAccountManagerCallback\l\< Bundle \>"
+	"AnimatorSet"
 		[color=white,
 		height=0.2,
-		label="android::accounts::\lAccountManagerCallback\l\< Bundle \>",
-		style=filled,
+		label="AnimatorSet",
+		style="filled",
 		width=0.4];
 
-	"android::widget::ArrayAdapter\l\< SpinnerLanguageElement \>"
+	"Bitmap"
 		[color=white,
 		height=0.2,
-		label="android::widget::ArrayAdapter\l\< SpinnerLanguageElement \>",
-		style=filled,
+		label="Bitmap",
+		style="filled",
 		width=0.4];
 
-	"ApplicationStatus::\lApplicationStateListener"
+	"Button"
 		[color=white,
 		height=0.2,
-		label="ApplicationStatus::\lApplicationStateListener",
-		style=filled,
+		label="Button",
+		style="filled",
 		width=0.4];
 
-	"ArrayDeque\< InfoBarTransition\lInfo \>"
+	"ContentViewCore"
 		[color=white,
 		height=0.2,
-		label="ArrayDeque\< InfoBarTransition\lInfo \>",
-		style=filled,
+		label="ContentViewCore",
+		style="filled",
 		width=0.4];
 
-	"ArrayList\< ChangeListener \>"
+	"Context"
 		[color=white,
 		height=0.2,
-		label="ArrayList\< ChangeListener \>",
-		style=filled,
+		label="Context",
+		style="filled",
 		width=0.4];
 
-	"ArrayList\< CustomMenuItem \>"
+	"FrameLayout"
 		[color=white,
 		height=0.2,
-		label="ArrayList\< CustomMenuItem \>",
-		style=filled,
+		label="FrameLayout",
+		style="filled",
 		width=0.4];
 
-	"ArrayList\< org.chromium.chrome.browser.appmenu.\lAppMenuObserver \>"
-		[color=white,
-		group=appmenu,
-		height=0.2,
-		label="ArrayList\< org.chromium.chrome.browser.appmenu.\lAppMenuObserver \>",
-		style=filled,
-		width=0.4];
-
-	"ArrayList\< org.chromium.chrome.browser.infobar.\lInfoBar \>"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="ArrayList\< org.chromium.chrome.browser.infobar.\lInfoBar \>",
-		style=filled,
-		width=0.4];
-
-	"ContentUriUtils::FileProviderUtil"
+	"GestureDetector"
 		[color=white,
 		height=0.2,
-		label="ContentUriUtils::FileProviderUtil",
-		style=filled,
+		label="GestureDetector",
+		style="filled",
 		width=0.4];
 
-	"DialogInterface::OnClick\lListener"
-		[color=red,
-		height=0.2,
-		label="DialogInterface::OnClick\lListener",
-		style=filled,
-		width=0.4];
-
-	"DistilledPagePrefs\l::Observer"
+	"Handler"
 		[color=white,
 		height=0.2,
-		label="DistilledPagePrefs\l::Observer",
-		style=filled,
+		label="Handler",
+		style="filled",
 		width=0.4];
 
-	"FutureTask\< SecretKey \>"
+	"ImageButton"
 		[color=white,
 		height=0.2,
-		label="FutureTask\< SecretKey \>",
-		style=filled,
+		label="ImageButton",
+		style="filled",
 		width=0.4];
 
-	"HashMap\< org.chromium.chrome.browser.profiles.\lProfile, DomDistillerService \>"
+	"ImageView"
 		[color=white,
-		group=profiles,
 		height=0.2,
-		label="HashMap\< org.chromium.chrome.browser.profiles.\lProfile, DomDistillerService \>",
-		style=filled,
+		label="ImageView",
+		style="filled",
 		width=0.4];
 
-	"HashSet\< String \>"
+	"LinearLayout"
 		[color=white,
 		height=0.2,
-		label="HashSet\< String \>",
-		style=filled,
-		width=0.4];
-
-	"List\< BookmarkNode \>"
-		[color=white,
-		height=0.2,
-		label="List\< BookmarkNode \>",
-		style=filled,
-		width=0.4];
-
-	"List\< DelayedBookmarkCallback \>"
-		[color=white,
-		height=0.2,
-		label="List\< DelayedBookmarkCallback \>",
-		style=filled,
-		width=0.4];
-
-	"List\< Integer \>"
-		[color=white,
-		height=0.2,
-		label="List\< Integer \>",
-		style=filled,
-		width=0.4];
-
-	"List\< MenuItem \>"
-		[color=white,
-		height=0.2,
-		label="List\< MenuItem \>",
-		style=filled,
-		width=0.4];
-
-	"List\< Node \>"
-		[color=white,
-		height=0.2,
-		label="List\< Node \>",
-		style=filled,
+		label="LinearLayout",
+		style="filled",
 		width=0.4];
 
 	"List\< org.chromium.chrome.browser.\lTab \>"
 		[color=white,
 		height=0.2,
 		label="List\< org.chromium.chrome.browser.\lTab \>",
-		style=filled,
+		style="filled",
 		width=0.4];
 
-	"List\< org.chromium.chrome.browser.autofill.\lPersonalDataManager.PersonalDataManagerObserver \>"
-		[color=white,
-		group=autofill,
-		height=0.2,
-		label="List\< org.chromium.chrome.browser.autofill.\lPersonalDataManager.PersonalDataManagerObserver \>",
-		style=filled,
-		width=0.4];
-
-	"List\< org.chromium.chrome.browser.sync.\lProfileSyncService.SyncStateChangedListener \>"
-		[color=azure3,
-		group=sync,
-		height=0.2,
-		label="List\< org.chromium.chrome.browser.sync.\lProfileSyncService.SyncStateChangedListener \>",
-		style=filled,
-		width=0.4];
-
-	"List\< org.chromium.chrome.browser.tabmodel.\lTabModel \>"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="List\< org.chromium.chrome.browser.tabmodel.\lTabModel \>",
-		style=filled,
-		width=0.4];
-
-	"List\< TextField \>"
+	"Menu"
 		[color=white,
 		height=0.2,
-		label="List\< TextField \>",
-		style=filled,
+		label="Menu",
+		style="filled",
 		width=0.4];
 
-	"Map\< org.chromium.chrome.browser.accessibility.\lFontSizePrefs.Observer, FontSizePrefsObserver\lWrapper \>"
-		[color=dodgerblue4,
-		group=accessibility,
-		height=0.2,
-		label="Map\< org.chromium.chrome.browser.accessibility.\lFontSizePrefs.Observer, FontSizePrefsObserver\lWrapper \>",
-		style=filled,
-		width=0.4];
-
-	"Map\< org.chromium.chrome.browser.profiles.\lProfile, InvalidationService \>"
-		[color=white,
-		group=profiles,
-		height=0.2,
-		label="Map\< org.chromium.chrome.browser.profiles.\lProfile, InvalidationService \>",
-		style=filled,
-		width=0.4];
-
-	"Map\< String, org.chromium.chrome.browser.identity.\lUniqueIdentificationGenerator \>"
-		[color=white,
-		group=identity,
-		height=0.2,
-		label="Map\< String, org.chromium.chrome.browser.identity.\lUniqueIdentificationGenerator \>",
-		style=filled,
-		width=0.4];
-
-	"Map\< String, String \>"
+	"OnClickListener"
 		[color=white,
 		height=0.2,
-		label="Map\< String, String \>",
-		style=filled,
-		width=0.4];
-
-	"Map\< Theme, RadioButton \>"
-		[color=white,
-		height=0.2,
-		label="Map\< Theme, RadioButton \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< BookmarkModel\lObserver \>"
-		[color=white,
-		height=0.2,
-		label="ObserverList\< BookmarkModel\lObserver \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.\lApplicationLifetime.Observer \>"
-		[color=white,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.\lApplicationLifetime.Observer \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.\lEnhancedBookmarksBridge.FiltersObserver \>"
-		[color=white,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.\lEnhancedBookmarksBridge.FiltersObserver \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.\lEnhancedBookmarksBridge.SearchServiceObserver \>"
-		[color=white,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.\lEnhancedBookmarksBridge.SearchServiceObserver \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.\lPasswordUIView.PasswordListObserver \>"
-		[color=white,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.\lPasswordUIView.PasswordListObserver \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.\lTabObserver \>"
-		[color=white,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.\lTabObserver \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.profiles.\lProfileDownloader.Observer \>"
-		[color=white,
-		group=profiles,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.profiles.\lProfileDownloader.Observer \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.search\l_engines.TemplateUrlService.LoadListener \>"
-		[color=white,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.search\l_engines.TemplateUrlService.LoadListener \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.signin.\lOAuth2TokenService.OAuth2TokenServiceObserver \>"
-		[color=gold,
-		group=signin,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.signin.\lOAuth2TokenService.OAuth2TokenServiceObserver \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.signin.\lSigninManager.SignInAllowedObserver \>"
-		[color=gold,
-		group=signin,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.signin.\lSigninManager.SignInAllowedObserver \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.signin.\lSigninManager.SignInStateObserver \>"
-		[color=gold,
-		group=signin,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.signin.\lSigninManager.SignInStateObserver \>",
-		style=filled,
-		width=0.4];
-
-	"ObserverList\< org.chromium.chrome.browser.tabmodel.\lTabModelObserver \>"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="ObserverList\< org.chromium.chrome.browser.tabmodel.\lTabModelObserver \>",
-		style=filled,
-		width=0.4];
-
-	"OnSharedPreferenceChange\lListener"
-		[color=white,
-		height=0.2,
-		label="OnSharedPreferenceChange\lListener",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lApplicationLifetime"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lApplicationLifetime",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lBookmarksBridge"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lBookmarksBridge",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lChromeBrowserProvider"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lChromeBrowserProvider",
-		style=filled,
+		label="OnClickListener",
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.\lChromeBrowserProvider.BookmarkNode"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.\lChromeBrowserProvider.BookmarkNode",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lChromeBrowserProvider.Type"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lChromeBrowserProvider.Type",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.\lChromeHttpAuthHandler"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.\lChromeHttpAuthHandler",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.\lChromeHttpAuthHandler.AutofillObserver"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.\lChromeHttpAuthHandler.AutofillObserver",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lChromeWebContentsDelegateAndroid"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lChromeWebContentsDelegateAndroid",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lChromiumApplication"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lChromiumApplication",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lEmptyTabObserver"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lEmptyTabObserver",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lEnhancedBookmarksBridge"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lEnhancedBookmarksBridge",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lFileProviderHelper"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lFileProviderHelper",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lFindMatchRectsDetails"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lFindMatchRectsDetails",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lFindNotificationDetails"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lFindNotificationDetails",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lFrozenNativePage"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lFrozenNativePage",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lJavascriptAppModalDialog"
-		[color=red,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lJavascriptAppModalDialog",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lLoginPrompt"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lLoginPrompt",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lNativePage"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lNativePage",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lNavigationPopup"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lNavigationPopup",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.\lNavigationPopup.ListItemFactory"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.\lNavigationPopup.ListItemFactory",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lNavigationPopup.NavigationAdapter"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lNavigationPopup.NavigationAdapter",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lNotificationUIManager"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lNotificationUIManager",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lPasswordUIView"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lPasswordUIView",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.\lShortcutHelper"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.\lShortcutHelper",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lShortcutHelper.OnInitialized"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lShortcutHelper.OnInitialized",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lSSLClientCertificateRequest"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lSSLClientCertificateRequest",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lTab.TabChromeContextMenuItemDelegate"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lTab.TabChromeContextMenuItemDelegate",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lTab.TabChromeWebContentsDelegate\lAndroid"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lTab.TabChromeWebContentsDelegate\lAndroid",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lTab.TabContextMenuPopulator"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lTab.TabContextMenuPopulator",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lTab.TabWebContentsObserver"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lTab.TabWebContentsObserver",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.\lTabObserver"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.\lTabObserver",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lTabState"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lTabState",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lTabState.WebContentsState"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lTabState.WebContentsState",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lUrlUtilities"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lUrlUtilities",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.\lVoiceSearchTabHelper"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.\lVoiceSearchTabHelper",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lWebappAuthenticator"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lWebappAuthenticator",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lWebsiteSettingsPopup"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lWebsiteSettingsPopup",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.\lWebsiteSettingsPopupLegacy"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.\lWebsiteSettingsPopupLegacy",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.accessibility.\lFontSizePrefs"
@@ -606,15 +179,7 @@ node [fontname=Helvetica,
 		group=accessibility,
 		height=0.2,
 		label="org.chromium.chrome.browser.accessibility.\lFontSizePrefs",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.accessibility.\lFontSizePrefs.Observer"
-		[color=dodgerblue4,
-		group=accessibility,
-		height=0.2,
-		label="org.chromium.chrome.browser.accessibility.\lFontSizePrefs.Observer",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.appmenu.\lAppMenu"
@@ -622,7 +187,7 @@ node [fontname=Helvetica,
 		group=appmenu,
 		height=0.2,
 		label="org.chromium.chrome.browser.appmenu.\lAppMenu",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.appmenu.\lAppMenuAdapter"
@@ -630,15 +195,7 @@ node [fontname=Helvetica,
 		group=appmenu,
 		height=0.2,
 		label="org.chromium.chrome.browser.appmenu.\lAppMenuAdapter",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.appmenu.\lAppMenuButtonHelper"
-		[color=white,
-		group=appmenu,
-		height=0.2,
-		label="org.chromium.chrome.browser.appmenu.\lAppMenuButtonHelper",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.appmenu.\lAppMenuDragHelper"
@@ -646,7 +203,7 @@ node [fontname=Helvetica,
 		group=appmenu,
 		height=0.2,
 		label="org.chromium.chrome.browser.appmenu.\lAppMenuDragHelper",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.appmenu.\lAppMenuHandler"
@@ -654,87 +211,7 @@ node [fontname=Helvetica,
 		group=appmenu,
 		height=0.2,
 		label="org.chromium.chrome.browser.appmenu.\lAppMenuHandler",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.appmenu.\lAppMenuPropertiesDelegate"
-		[color=white,
-		group=appmenu,
-		height=0.2,
-		label="org.chromium.chrome.browser.appmenu.\lAppMenuPropertiesDelegate",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.autofill.\lAutofillDialogControllerAndroid"
-		[color=red,
-		group=autofill,
-		height=0.2,
-		label="org.chromium.chrome.browser.autofill.\lAutofillDialogControllerAndroid",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.autofill.\lAutofillDialogControllerAndroid.Autofill\lDialogFactory"
-		[color=red,
-		group=autofill,
-		height=0.2,
-		label="org.chromium.chrome.browser.autofill.\lAutofillDialogControllerAndroid.Autofill\lDialogFactory",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.autofill.\lAutofillDialogControllerAndroid.AutofillDialog"
-		[color=red,
-		group=autofill,
-		height=0.2,
-		label="org.chromium.chrome.browser.autofill.\lAutofillDialogControllerAndroid.AutofillDialog",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.autofill.\lAutofillLogger"
-		[color=white,
-		group=autofill,
-		height=0.2,
-		label="org.chromium.chrome.browser.autofill.\lAutofillLogger",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.autofill.\lAutofillLogger.Logger"
-		[color=white,
-		group=autofill,
-		height=0.2,
-		label="org.chromium.chrome.browser.autofill.\lAutofillLogger.Logger",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.autofill.\lAutofillPopupBridge"
-		[color=white,
-		group=autofill,
-		height=0.2,
-		label="org.chromium.chrome.browser.autofill.\lAutofillPopupBridge",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.autofill.\lPasswordGenerationAdapter"
-		[color=white,
-		group=autofill,
-		height=0.2,
-		label="org.chromium.chrome.browser.autofill.\lPasswordGenerationAdapter",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.autofill.\lPasswordGenerationAdapter.Delegate"
-		[color=white,
-		group=autofill,
-		height=0.2,
-		label="org.chromium.chrome.browser.autofill.\lPasswordGenerationAdapter.Delegate",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.autofill.\lPasswordGenerationPopupBridge"
-		[color=white,
-		group=autofill,
-		height=0.2,
-		label="org.chromium.chrome.browser.autofill.\lPasswordGenerationPopupBridge",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.autofill.\lPersonalDataManager"
@@ -742,7 +219,7 @@ node [fontname=Helvetica,
 		group=autofill,
 		height=0.2,
 		label="org.chromium.chrome.browser.autofill.\lPersonalDataManager",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.banners.\lAppBannerManager"
@@ -750,7 +227,7 @@ node [fontname=Helvetica,
 		group=banners,
 		height=0.2,
 		label="org.chromium.chrome.browser.banners.\lAppBannerManager",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.banners.\lAppBannerView"
@@ -758,15 +235,7 @@ node [fontname=Helvetica,
 		group=banners,
 		height=0.2,
 		label="org.chromium.chrome.browser.banners.\lAppBannerView",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.banners.\lAppBannerView.Observer"
-		[color=blueviolet,
-		group=banners,
-		height=0.2,
-		label="org.chromium.chrome.browser.banners.\lAppBannerView.Observer",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.banners.\lAppData"
@@ -774,23 +243,7 @@ node [fontname=Helvetica,
 		group=banners,
 		height=0.2,
 		label="org.chromium.chrome.browser.banners.\lAppData",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.banners.\lAppDetailsDelegate"
-		[color=blueviolet,
-		group=banners,
-		height=0.2,
-		label="org.chromium.chrome.browser.banners.\lAppDetailsDelegate",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.banners.\lAppDetailsDelegate.Observer"
-		[color=blueviolet,
-		group=banners,
-		height=0.2,
-		label="org.chromium.chrome.browser.banners.\lAppDetailsDelegate.Observer",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.banners.\lInstallerDelegate"
@@ -798,7 +251,7 @@ node [fontname=Helvetica,
 		group=banners,
 		height=0.2,
 		label="org.chromium.chrome.browser.banners.\lInstallerDelegate",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.banners.\lInstallerDelegate.Observer"
@@ -806,7 +259,7 @@ node [fontname=Helvetica,
 		group=banners,
 		height=0.2,
 		label="org.chromium.chrome.browser.banners.\lInstallerDelegate.Observer",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.banners.\lRatingView"
@@ -814,7 +267,7 @@ node [fontname=Helvetica,
 		group=banners,
 		height=0.2,
 		label="org.chromium.chrome.browser.banners.\lRatingView",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.banners.\lSwipableOverlayView"
@@ -822,39 +275,7 @@ node [fontname=Helvetica,
 		group=banners,
 		height=0.2,
 		label="org.chromium.chrome.browser.banners.\lSwipableOverlayView",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.contextmenu.\lChromeContextMenuItemDelegate"
-		[color=white,
-		group=contextmenu,
-		height=0.2,
-		label="org.chromium.chrome.browser.contextmenu.\lChromeContextMenuItemDelegate",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.contextmenu.\lChromeContextMenuPopulator"
-		[color=white,
-		group=contextmenu,
-		height=0.2,
-		label="org.chromium.chrome.browser.contextmenu.\lChromeContextMenuPopulator",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.contextmenu.\lContextMenuHelper"
-		[color=white,
-		group=contextmenu,
-		height=0.2,
-		label="org.chromium.chrome.browser.contextmenu.\lContextMenuHelper",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.contextmenu.\lContextMenuParams"
-		[color=white,
-		group=contextmenu,
-		height=0.2,
-		label="org.chromium.chrome.browser.contextmenu.\lContextMenuParams",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.contextmenu.\lContextMenuPopulator"
@@ -862,7 +283,7 @@ node [fontname=Helvetica,
 		group=contextmenu,
 		height=0.2,
 		label="org.chromium.chrome.browser.contextmenu.\lContextMenuPopulator",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.contextmenu.\lContextMenuPopulatorWrapper"
@@ -870,105 +291,28 @@ node [fontname=Helvetica,
 		group=contextmenu,
 		height=0.2,
 		label="org.chromium.chrome.browser.contextmenu.\lContextMenuPopulatorWrapper",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.contextmenu.\lEmptyChromeContextMenuItemDelegate"
-		[color=white,
-		group=contextmenu,
-		height=0.2,
-		label="org.chromium.chrome.browser.contextmenu.\lEmptyChromeContextMenuItemDelegate",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.database.\lSQLiteCursor"
-		[color=red,
-		group=database,
-		height=0.2,
-		label="org.chromium.chrome.browser.database.\lSQLiteCursor",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporter"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporter",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporting\lView.FeedbackObserver"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporting\lView.FeedbackObserver",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReportingView"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReportingView",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.dom\l_distiller.DomDistillerServiceFactory"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.dom\l_distiller.DomDistillerServiceFactory",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.dom\l_distiller.ExternalFeedbackReporter"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.dom\l_distiller.ExternalFeedbackReporter",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.findinpage.\lFindInPageBridge"
-		[color=white,
-		group=findinpage,
-		height=0.2,
-		label="org.chromium.chrome.browser.findinpage.\lFindInPageBridge",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.identity.\lSettingsSecureBasedIdentificationGenerator"
-		[color=white,
-		group=identity,
-		height=0.2,
-		label="org.chromium.chrome.browser.identity.\lSettingsSecureBasedIdentificationGenerator",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.identity.\lUniqueIdentificationGenerator"
-		[color=white,
-		group=identity,
-		height=0.2,
-		label="org.chromium.chrome.browser.identity.\lUniqueIdentificationGenerator",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.identity.\lUniqueIdentificationGeneratorFactory"
-		[color=white,
-		group=identity,
-		height=0.2,
-		label="org.chromium.chrome.browser.identity.\lUniqueIdentificationGeneratorFactory",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.identity.\lUuidBasedUniqueIdentificationGenerator"
-		[color=white,
-		group=identity,
-		height=0.2,
-		label="org.chromium.chrome.browser.identity.\lUuidBasedUniqueIdentificationGenerator",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.infobar.\lAnimationHelper"
@@ -976,15 +320,7 @@ node [fontname=Helvetica,
 		group=infobar,
 		height=0.2,
 		label="org.chromium.chrome.browser.infobar.\lAnimationHelper",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lAutoLoginAccountDelegate"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lAutoLoginAccountDelegate",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.infobar.\lAutoLoginDelegate"
@@ -992,15 +328,7 @@ node [fontname=Helvetica,
 		group=infobar,
 		height=0.2,
 		label="org.chromium.chrome.browser.infobar.\lAutoLoginDelegate",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lAutoLoginProcessor"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lAutoLoginProcessor",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.infobar.\lConfirmInfoBar"
@@ -1008,7 +336,7 @@ node [fontname=Helvetica,
 		group=infobar,
 		height=0.2,
 		label="org.chromium.chrome.browser.infobar.\lConfirmInfoBar",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.infobar.\lContentWrapperView"
@@ -1016,23 +344,7 @@ node [fontname=Helvetica,
 		group=infobar,
 		height=0.2,
 		label="org.chromium.chrome.browser.infobar.\lContentWrapperView",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lDataReductionProxyInfoBar"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lDataReductionProxyInfoBar",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lGeneratedPasswordSavedInfoBar"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lGeneratedPasswordSavedInfoBar",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.infobar.\lInfoBar"
@@ -1040,7 +352,7 @@ node [fontname=Helvetica,
 		group=infobar,
 		height=0.2,
 		label="org.chromium.chrome.browser.infobar.\lInfoBar",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.infobar.\lInfoBarContainer"
@@ -1048,31 +360,7 @@ node [fontname=Helvetica,
 		group=infobar,
 		height=0.2,
 		label="org.chromium.chrome.browser.infobar.\lInfoBarContainer",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarContainer.InfoBarAnimationListener"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lInfoBarContainer.InfoBarAnimationListener",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarLayout"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lInfoBarLayout",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarLayout.Group"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lInfoBarLayout.Group",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.infobar.\lInfoBarListeners"
@@ -1080,63 +368,7 @@ node [fontname=Helvetica,
 		group=infobar,
 		height=0.2,
 		label="org.chromium.chrome.browser.infobar.\lInfoBarListeners",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarListeners.Confirm"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lInfoBarListeners.Confirm",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarListeners.Dismiss"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lInfoBarListeners.Dismiss",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarView"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lInfoBarView",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lMessageInfoBar"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lMessageInfoBar",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lSubPanelListener"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lSubPanelListener",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateAlwaysPanel"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lTranslateAlwaysPanel",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateCheckBox"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lTranslateCheckBox",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.infobar.\lTranslateInfoBar"
@@ -1144,7 +376,7 @@ node [fontname=Helvetica,
 		group=infobar,
 		height=0.2,
 		label="org.chromium.chrome.browser.infobar.\lTranslateInfoBar",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.infobar.\lTranslateInfoBarDelegate"
@@ -1152,47 +384,7 @@ node [fontname=Helvetica,
 		group=infobar,
 		height=0.2,
 		label="org.chromium.chrome.browser.infobar.\lTranslateInfoBarDelegate",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel.LanguageArray\lAdapter"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel.LanguageArray\lAdapter",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateNeverPanel"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lTranslateNeverPanel",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateOptions"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lTranslateOptions",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateSubPanel"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="org.chromium.chrome.browser.infobar.\lTranslateSubPanel",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.invalidation.\lInvalidationController"
@@ -1200,23 +392,7 @@ node [fontname=Helvetica,
 		group=invalidation,
 		height=0.2,
 		label="org.chromium.chrome.browser.invalidation.\lInvalidationController",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.invalidation.\lInvalidationServiceFactory"
-		[color=white,
-		group=invalidation,
-		height=0.2,
-		label="org.chromium.chrome.browser.invalidation.\lInvalidationServiceFactory",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.invalidation.\lUniqueIdInvalidationClientNameGenerator"
-		[color=white,
-		group=invalidation,
-		height=0.2,
-		label="org.chromium.chrome.browser.invalidation.\lUniqueIdInvalidationClientNameGenerator",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.net.spdyproxy.\lDataReductionProxySettings"
@@ -1224,101 +400,7 @@ node [fontname=Helvetica,
 		group=net,
 		height=0.2,
 		label="org.chromium.chrome.browser.net.spdyproxy.\lDataReductionProxySettings",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.omaha.\lRequestFailureException"
-		[color=white,
-		group=omaha,
-		height=0.2,
-		label="org.chromium.chrome.browser.omaha.\lRequestFailureException",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.omaha.\lXMLParser"
-		[color=white,
-		group=omaha,
-		height=0.2,
-		label="org.chromium.chrome.browser.omaha.\lXMLParser",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.omaha.\lXMLParser.Node"
-		[color=white,
-		group=omaha,
-		height=0.2,
-		label="org.chromium.chrome.browser.omaha.\lXMLParser.Node",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.omnibox.\lAutocompleteController"
-		[color=white,
-		group=omnibox,
-		height=0.2,
-		label="org.chromium.chrome.browser.omnibox.\lAutocompleteController",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.omnibox.\lAutocompleteController.OnSuggestions\lReceivedListener"
-		[color=white,
-		group=omnibox,
-		height=0.2,
-		label="org.chromium.chrome.browser.omnibox.\lAutocompleteController.OnSuggestions\lReceivedListener",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.omnibox.\lOmniboxSuggestion"
-		[color=white,
-		group=omnibox,
-		height=0.2,
-		label="org.chromium.chrome.browser.omnibox.\lOmniboxSuggestion",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.omnibox.\lOmniboxSuggestion.Type"
-		[color=white,
-		group=omnibox,
-		height=0.2,
-		label="org.chromium.chrome.browser.omnibox.\lOmniboxSuggestion.Type",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.omnibox.\lSuggestionAnswer"
-		[color=white,
-		group=omnibox,
-		height=0.2,
-		label="org.chromium.chrome.browser.omnibox.\lSuggestionAnswer",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.omnibox.\lSuggestionAnswer.ImageLine"
-		[color=white,
-		group=omnibox,
-		height=0.2,
-		label="org.chromium.chrome.browser.omnibox.\lSuggestionAnswer.ImageLine",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.omnibox.\lSuggestionAnswer.TextField"
-		[color=white,
-		group=omnibox,
-		height=0.2,
-		label="org.chromium.chrome.browser.omnibox.\lSuggestionAnswer.TextField",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.password\l_manager.PasswordAuthenticationManager"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.password\l_manager.PasswordAuthenticationManager",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.password\l_manager.PasswordAuthenticationManager.\lPasswordAuthenticationDelegate"
-		[color=white,
-		height=0.2,
-		label="org.chromium.chrome.browser.password\l_manager.PasswordAuthenticationManager.\lPasswordAuthenticationDelegate",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.preferences.\lNetworkPredictionOptions"
@@ -1326,7 +408,7 @@ node [fontname=Helvetica,
 		group=preferences,
 		height=0.2,
 		label="org.chromium.chrome.browser.preferences.\lNetworkPredictionOptions",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.preferences.\lPrefServiceBridge"
@@ -1334,70 +416,14 @@ node [fontname=Helvetica,
 		group=preferences,
 		height=0.2,
 		label="org.chromium.chrome.browser.preferences.\lPrefServiceBridge",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.preferences.\lPrefServiceBridge.OnClearBrowsingDataListener"
-		[color=white,
-		group=preferences,
-		height=0.2,
-		label="org.chromium.chrome.browser.preferences.\lPrefServiceBridge.OnClearBrowsingDataListener",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.printing.\lTabPrinter"
-		[color=white,
-		group=printing,
-		height=0.2,
-		label="org.chromium.chrome.browser.printing.\lTabPrinter",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.profiles.\lProfile"
-		[color=white,
-		group=profiles,
-		height=0.2,
-		label="org.chromium.chrome.browser.profiles.\lProfile",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.profiles.\lProfileDownloader"
-		[color=white,
-		group=profiles,
-		height=0.2,
-		label="org.chromium.chrome.browser.profiles.\lProfileDownloader",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.search\l_engines.TemplateUrlService"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.search\l_engines.TemplateUrlService",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.signin.\lAccountManagementScreenHelper"
-		[color=gold,
-		group=signin,
-		height=0.2,
-		label="org.chromium.chrome.browser.signin.\lAccountManagementScreenHelper",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.signin.\lAccountManagementScreenHelper.Account\lManagementScreenManager"
-		[color=gold,
-		group=signin,
-		height=0.2,
-		label="org.chromium.chrome.browser.signin.\lAccountManagementScreenHelper.Account\lManagementScreenManager",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.signin.\lOAuth2TokenService"
-		[color=gold,
-		group=signin,
-		height=0.2,
-		label="org.chromium.chrome.browser.signin.\lOAuth2TokenService",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.signin.\lSigninManager"
@@ -1405,47 +431,7 @@ node [fontname=Helvetica,
 		group=signin,
 		height=0.2,
 		label="org.chromium.chrome.browser.signin.\lSigninManager",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.signin.\lSigninManager.SignInFlowObserver"
-		[color=gold,
-		group=signin,
-		height=0.2,
-		label="org.chromium.chrome.browser.signin.\lSigninManager.SignInFlowObserver",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.sync.\lChromiumSyncAdapter"
-		[color=azure3,
-		group=sync,
-		height=0.2,
-		label="org.chromium.chrome.browser.sync.\lChromiumSyncAdapter",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.sync.\lChromiumSyncAdapterService"
-		[color=azure3,
-		group=sync,
-		height=0.2,
-		label="org.chromium.chrome.browser.sync.\lChromiumSyncAdapterService",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.sync.\lGoogleServiceAuthError"
-		[color=azure3,
-		group=sync,
-		height=0.2,
-		label="org.chromium.chrome.browser.sync.\lGoogleServiceAuthError",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.sync.\lGoogleServiceAuthError.State"
-		[color=azure3,
-		group=sync,
-		height=0.2,
-		label="org.chromium.chrome.browser.sync.\lGoogleServiceAuthError.State",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.sync.\lProfileSyncService"
@@ -1453,30 +439,14 @@ node [fontname=Helvetica,
 		group=sync,
 		height=0.2,
 		label="org.chromium.chrome.browser.sync.\lProfileSyncService",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.Tab"
 		[color=white,
 		height=0.2,
 		label="org.chromium.chrome.browser.Tab",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.tabmodel.\lEmptyTabModel"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="org.chromium.chrome.browser.tabmodel.\lEmptyTabModel",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.tabmodel.\lEmptyTabModelObserver"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="org.chromium.chrome.browser.tabmodel.\lEmptyTabModelObserver",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.tabmodel.\lTabList"
@@ -1484,7 +454,7 @@ node [fontname=Helvetica,
 		group=tabmodel,
 		height=0.2,
 		label="org.chromium.chrome.browser.tabmodel.\lTabList",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.tabmodel.\lTabModel"
@@ -1492,15 +462,7 @@ node [fontname=Helvetica,
 		group=tabmodel,
 		height=0.2,
 		label="org.chromium.chrome.browser.tabmodel.\lTabModel",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelBase"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="org.chromium.chrome.browser.tabmodel.\lTabModelBase",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.tabmodel.\lTabModelBase.RewoundList"
@@ -1508,87 +470,7 @@ node [fontname=Helvetica,
 		group=tabmodel,
 		height=0.2,
 		label="org.chromium.chrome.browser.tabmodel.\lTabModelBase.RewoundList",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelDelegate"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="org.chromium.chrome.browser.tabmodel.\lTabModelDelegate",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelJniBridge"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="org.chromium.chrome.browser.tabmodel.\lTabModelJniBridge",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelObserver"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="org.chromium.chrome.browser.tabmodel.\lTabModelObserver",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelOrderController"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="org.chromium.chrome.browser.tabmodel.\lTabModelOrderController",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelSelector"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="org.chromium.chrome.browser.tabmodel.\lTabModelSelector",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelSelectorBase"
-		[color=white,
-		group=tabmodel,
-		height=0.2,
-		label="org.chromium.chrome.browser.tabmodel.\lTabModelSelectorBase",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.webapps.\lAddToHomescreenDialog"
-		[color=red,
-		group=webapps,
-		height=0.2,
-		label="org.chromium.chrome.browser.webapps.\lAddToHomescreenDialog",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.widget.\lTintedDrawable"
-		[color=coral3,
-		group=widget,
-		height=0.2,
-		label="org.chromium.chrome.browser.widget.\lTintedDrawable",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.widget.\lTintedImageButton"
-		[color=coral3,
-		group=widget,
-		height=0.2,
-		label="org.chromium.chrome.browser.widget.\lTintedImageButton",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.widget.\lTintedImageView"
-		[color=coral3,
-		group=widget,
-		height=0.2,
-		label="org.chromium.chrome.browser.widget.\lTintedImageView",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter"
@@ -1596,15 +478,7 @@ node [fontname=Helvetica,
 		group=widget,
 		height=0.2,
 		label="org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter",
-		style=filled,
-		width=0.4];
-
-	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter.AccessibilityTabModel\lAdapterListener"
-		[color=coral3,
-		group=widget,
-		height=0.2,
-		label="org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter.AccessibilityTabModel\lAdapterListener",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
@@ -1612,7 +486,7 @@ node [fontname=Helvetica,
 		group=widget,
 		height=0.2,
 		label="org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem.AccessibilityTab\lModelListItemListener"
@@ -1620,7 +494,7 @@ node [fontname=Helvetica,
 		group=widget,
 		height=0.2,
 		label="org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem.AccessibilityTab\lModelListItemListener",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListView"
@@ -1628,7 +502,7 @@ node [fontname=Helvetica,
 		group=widget,
 		height=0.2,
 		label="org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListView",
-		style=filled,
+		style="filled",
 		width=0.4];
 
 	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelWrapper"
@@ -1636,2880 +510,652 @@ node [fontname=Helvetica,
 		group=widget,
 		height=0.2,
 		label="org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelWrapper",
-		style=filled,
+		style="filled",
 		width=0.4];
 
-	"Pair\< Long, org.chromium.chrome.browser.infobar.\lAutoLoginAccountDelegate \>"
-		[color=blue1,
-		group=infobar,
-		height=0.2,
-		label="Pair\< Long, org.chromium.chrome.browser.infobar.\lAutoLoginAccountDelegate \>",
-		style=filled,
-		width=0.4];
-
-	"PopupWindow::OnDismissListener"
-		[color=white,
-		height=0.2,
-		label="PopupWindow::OnDismissListener",
-		style=filled,
-		width=0.4];
-
-	"SeekBar::OnSeekBarChange\lListener"
-		[color=white,
-		height=0.2,
-		label="SeekBar::OnSeekBarChange\lListener",
-		style=filled,
-		width=0.4];
-
-	"Stack\< Node \>"
-		[color=white,
-		height=0.2,
-		label="Stack\< Node \>",
-		style=filled,
-		width=0.4];
-
-	"View::OnClickListener"
-		[color=white,
-		height=0.2,
-		label="View::OnClickListener",
-		style=filled,
-		width=0.4];
-
-	"ViewTreeObserver::OnGlobal\lLayoutListener"
-		[color=white,
-		height=0.2,
-		label="ViewTreeObserver::OnGlobal\lLayoutListener",
-		style=filled,
-		width=0.4];
-
-	"WeakReference\< org.chromium.chrome.browser.\lTab \>"
-		[color=white,
-		height=0.2,
-		label="WeakReference\< org.chromium.chrome.browser.\lTab \>",
-		style=filled,
-		width=0.4];
-
-	AbstractCursor
-		[color=red,
-		height=0.2,
-		label=AbstractCursor,
-		style=filled,
-		width=0.4];
-
-	AbstractThreadedSyncAdapter
-		[color=white,
-		height=0.2,
-		label=AbstractThreadedSyncAdapter,
-		style=filled,
-		width=0.4];
-
-	Account
-		[color=white,
-		height=0.2,
-		label=Account,
-		style=filled,
-		width=0.4];
-
-	AccountManager
-		[color=white,
-		height=0.2,
-		label=AccountManager,
-		style=filled,
-		width=0.4];
-
-	Activity
-		[color=white,
-		height=0.2,
-		label=Activity,
-		style=filled,
-		width=0.4];
-
-	AlertDialog
-		[color=red,
-		height=0.2,
-		label=AlertDialog,
-		style=filled,
-		width=0.4];
-
-	Animator
-		[color=white,
-		height=0.2,
-		label=Animator,
-		style=filled,
-		width=0.4];
-
-	AnimatorListenerAdapter
-		[color=white,
-		height=0.2,
-		label=AnimatorListenerAdapter,
-		style=filled,
-		width=0.4];
-
-	AnimatorSet
-		[color=white,
-		height=0.2,
-		label=AnimatorSet,
-		style=filled,
-		width=0.4];
-
-	Application
-		[color=white,
-		height=0.2,
-		label=Application,
-		style=filled,
-		width=0.4];
-
-	AtomicInteger
-		[color=white,
-		height=0.2,
-		label=AtomicInteger,
-		style=filled,
-		width=0.4];
-
-	AutofillPopup
-		[color=white,
-		height=0.2,
-		label=AutofillPopup,
-		style=filled,
-		width=0.4];
-
-	AutofillPopupDelegate
-		[color=white,
-		height=0.2,
-		label=AutofillPopupDelegate,
-		style=filled,
-		width=0.4];
-
-	BaseAdapter
-		[color=white,
-		height=0.2,
-		label=BaseAdapter,
-		style=filled,
-		width=0.4];
-
-	Bitmap
-		[color=white,
-		height=0.2,
-		label=Bitmap,
-		style=filled,
-		width=0.4];
-
-	BitmapDrawable
-		[color=white,
-		height=0.2,
-		label=BitmapDrawable,
-		style=filled,
-		width=0.4];
-
-	BroadcastReceiver
-		[color=white,
-		height=0.2,
-		label=BroadcastReceiver,
-		style=filled,
-		width=0.4];
-
-	Button
-		[color=white,
-		height=0.2,
-		label=Button,
-		style=filled,
-		width=0.4];
-
-	ByteBuffer
-		[color=white,
-		height=0.2,
-		label=ByteBuffer,
-		style=filled,
-		width=0.4];
-
-	CheckBox
-		[color=white,
-		height=0.2,
-		label=CheckBox,
-		style=filled,
-		width=0.4];
-
-	Clipboard
-		[color=white,
-		height=0.2,
-		label=Clipboard,
-		style=filled,
-		width=0.4];
-
-	ColorStateList
-		[color=white,
-		height=0.2,
-		label=ColorStateList,
-		style=filled,
-		width=0.4];
-
-	ContentApplication
-		[color=white,
-		height=0.2,
-		label=ContentApplication,
-		style=filled,
-		width=0.4];
-
-	ContentProvider
-		[color=white,
-		height=0.2,
-		label=ContentProvider,
-		style=filled,
-		width=0.4];
-
-	ContentViewClient
-		[color=white,
-		height=0.2,
-		label=ContentViewClient,
-		style=filled,
-		width=0.4];
-
-	ContentViewCore
-		[color=white,
-		height=0.2,
-		label=ContentViewCore,
-		style=filled,
-		width=0.4];
-
-	Context
-		[color=white,
-		height=0.2,
-		label=Context,
-		style=filled,
-		width=0.4];
-
-	DefaultAndroidKeyStore
-		[color=white,
-		height=0.2,
-		label=DefaultAndroidKeyStore,
-		style=filled,
-		width=0.4];
-
-	DefaultHandler
-		[color=white,
-		height=0.2,
-		label=DefaultHandler,
-		style=filled,
-		width=0.4];
-
-	Dialog
-		[color=red,
-		height=0.2,
-		label=Dialog,
-		style=filled,
-		width=0.4];
-
-	DistilledPagePrefs
-		[color=white,
-		height=0.2,
-		label=DistilledPagePrefs,
-		style=filled,
-		width=0.4];
-
-	Drawable
-		[color=white,
-		height=0.2,
-		label=Drawable,
-		style=filled,
-		width=0.4];
-
-	DropdownPopupWindow
-		[color=white,
-		height=0.2,
-		label=DropdownPopupWindow,
-		style=filled,
-		width=0.4];
-
-	EditText
-		[color=white,
-		height=0.2,
-		label=EditText,
-		style=filled,
-		width=0.4];
-
-	Exception
-		[color=white,
-		height=0.2,
-		label=Exception,
-		style=filled,
-		width=0.4];
-
-	FrameLayout
-		[color=white,
-		height=0.2,
-		label=FrameLayout,
-		style=filled,
-		width=0.4];
-
-	GestureDetector
-		[color=white,
-		height=0.2,
-		label=GestureDetector,
-		style=filled,
-		width=0.4];
-
-	GestureStateListener
-		[color=white,
-		height=0.2,
-		label=GestureStateListener,
-		style=filled,
-		width=0.4];
-
-	Handler
-		[color=white,
-		height=0.2,
-		label=Handler,
-		style=filled,
-		width=0.4];
-
-	ImageButton
-		[color=white,
-		height=0.2,
-		label=ImageButton,
-		style=filled,
-		width=0.4];
-
-	ImageView
-		[color=white,
-		height=0.2,
-		label=ImageView,
-		style=filled,
-		width=0.4];
-
-	IntentCallback
-		[color=white,
-		height=0.2,
-		label=IntentCallback,
-		style=filled,
-		width=0.4];
-
-	Interpolator
-		[color=white,
-		height=0.2,
-		label=Interpolator,
-		style=filled,
-		width=0.4];
-
-	InvalidationClientNameGenerator
-		[color=white,
-		height=0.2,
-		label=InvalidationClientNameGenerator,
-		style=filled,
-		width=0.4];
-
-	LayoutInflater
-		[color=white,
-		height=0.2,
-		label=LayoutInflater,
-		style=filled,
-		width=0.4];
-
-	LinearLayout
-		[color=white,
-		height=0.2,
-		label=LinearLayout,
-		style=filled,
-		width=0.4];
-
-	ListPopupWindow
-		[color=white,
-		height=0.2,
-		label=ListPopupWindow,
-		style=filled,
-		width=0.4];
-
-	ListView
-		[color=white,
-		height=0.2,
-		label=ListView,
-		style=filled,
-		width=0.4];
-
-	Menu
-		[color=white,
-		height=0.2,
-		label=Menu,
-		style=filled,
-		width=0.4];
-
-	MenuInflater
-		[color=white,
-		height=0.2,
-		label=MenuInflater,
-		style=filled,
-		width=0.4];
-
-	NavigationController
-		[color=white,
-		height=0.2,
-		label=NavigationController,
-		style=filled,
-		width=0.4];
-
-	NavigationHistory
-		[color=white,
-		height=0.2,
-		label=NavigationHistory,
-		style=filled,
-		width=0.4];
-
-	NotificationManager
-		[color=white,
-		height=0.2,
-		label=NotificationManager,
-		style=filled,
-		width=0.4];
-
-	NumberFormat
-		[color=white,
-		height=0.2,
-		label=NumberFormat,
-		style=filled,
-		width=0.4];
-
-	OnCheckedChangeListener
-		[color=white,
-		height=0.2,
-		label=OnCheckedChangeListener,
-		style=filled,
-		width=0.4];
-
-	OnClickListener
-		[color=white,
-		height=0.2,
-		label=OnClickListener,
-		style=filled,
-		width=0.4];
-
-	OnCreateContextMenuListener
-		[color=white,
-		height=0.2,
-		label=OnCreateContextMenuListener,
-		style=filled,
-		width=0.4];
-
-	OnItemClickListener
-		[color=white,
-		height=0.2,
-		label=OnItemClickListener,
-		style=filled,
-		width=0.4];
-
-	OnItemSelectedListener
-		[color=white,
-		height=0.2,
-		label=OnItemSelectedListener,
-		style=filled,
-		width=0.4];
-
-	OnKeyListener
-		[color=white,
-		height=0.2,
-		label=OnKeyListener,
-		style=filled,
-		width=0.4];
-
-	OnMenuItemClickListener
-		[color=white,
-		height=0.2,
-		label=OnMenuItemClickListener,
-		style=filled,
-		width=0.4];
-
-	OnTouchListener
-		[color=white,
-		height=0.2,
-		label=OnTouchListener,
-		style=filled,
-		width=0.4];
-
-	PackageManager
-		[color=white,
-		height=0.2,
-		label=PackageManager,
-		style=filled,
-		width=0.4];
-
-	Paint
-		[color=white,
-		height=0.2,
-		label=Paint,
-		style=filled,
-		width=0.4];
-
-	Parcelable
-		[color=white,
-		height=0.2,
-		label=Parcelable,
-		style=filled,
-		width=0.4];
-
-	PendingIntent
-		[color=white,
-		height=0.2,
-		label=PendingIntent,
-		style=filled,
-		width=0.4];
-
-	Printable
-		[color=white,
-		height=0.2,
-		label=Printable,
-		style=filled,
-		width=0.4];
-
-	ProgressDialog
-		[color=red,
-		height=0.2,
-		label=ProgressDialog,
-		style=filled,
-		width=0.4];
-
-	RadioGroup
-		[color=white,
-		height=0.2,
-		label=RadioGroup,
-		style=filled,
-		width=0.4];
-
-	Rect
-		[color=white,
-		height=0.2,
-		label=Rect,
-		style=filled,
-		width=0.4];
-
-	RectF
-		[color=white,
-		height=0.2,
-		label=RectF,
-		style=filled,
-		width=0.4];
-
-	Referrer
-		[color=white,
-		height=0.2,
-		label=Referrer,
-		style=filled,
-		width=0.4];
-
-	Runnable
-		[color=white,
-		height=0.2,
-		label=Runnable,
-		style=filled,
-		width=0.4];
-
-	ScrollView
-		[color=white,
-		height=0.2,
-		label=ScrollView,
-		style=filled,
-		width=0.4];
-
-	SecretKey
-		[color=white,
-		height=0.2,
-		label=SecretKey,
-		style=filled,
-		width=0.4];
-
-	SeekBar
-		[color=white,
-		height=0.2,
-		label=SeekBar,
-		style=filled,
-		width=0.4];
-
-	Service
-		[color=white,
-		height=0.2,
-		label=Service,
-		style=filled,
-		width=0.4];
-
-	SharedPreferences
-		[color=white,
-		height=0.2,
-		label=SharedPreferences,
-		style=filled,
-		width=0.4];
-
-	SpannableString
-		[color=white,
-		height=0.2,
-		label=SpannableString,
-		style=filled,
-		width=0.4];
-
-	Spinner
-		[color=white,
-		height=0.2,
-		label=Spinner,
-		style=filled,
-		width=0.4];
-
-	TextView
-		[color=white,
-		height=0.2,
-		label=TextView,
-		style=filled,
-		width=0.4];
-
-	TimeAnimator
-		[color=white,
-		height=0.2,
-		label=TimeAnimator,
-		style=filled,
-		width=0.4];
-
-	Uri
-		[color=white,
-		height=0.2,
-		label=Uri,
-		style=filled,
-		width=0.4];
-
-	UriMatcher
-		[color=white,
-		height=0.2,
-		label=UriMatcher,
-		style=filled,
-		width=0.4];
-
-	View
-		[color=white,
-		height=0.2,
-		label=View,
-		style=filled,
-		width=0.4];
-
-	ViewGroup
-		[color=white,
-		height=0.2,
-		label=ViewGroup,
-		style=filled,
-		width=0.4];
-
-	WebContents
+	"Rect"
 		[color=white,
 		height=0.2,
-		label=WebContents,
-		style=filled,
+		label="Rect",
+		style="filled",
 		width=0.4];
 
-	WebContentsDelegateAndroid
+	"TextView"
 		[color=white,
 		height=0.2,
-		label=WebContentsDelegateAndroid,
-		style=filled,
+		label="TextView",
+		style="filled",
 		width=0.4];
 
-	WebContentsObserver
+	"View"
 		[color=white,
 		height=0.2,
-		label=WebContentsObserver,
-		style=filled,
+		label="View",
+		style="filled",
 		width=0.4];
 
-	WindowAndroid
+	"WebContentsObserver"
 		[color=white,
 		height=0.2,
-		label=WindowAndroid,
-		style=filled,
+		label="WebContentsObserver",
+		style="filled",
 		width=0.4];
-
-	AbstractCursor -> "org.chromium.chrome.browser.database.\lSQLiteCursor"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	AbstractThreadedSyncAdapter -> "org.chromium.chrome.browser.sync.\lChromiumSyncAdapter"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	AccountManager -> "org.chromium.chrome.browser.infobar.\lAutoLoginAccountDelegate"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAccountManager",
-		style=dashed];
-
-	Account -> "org.chromium.chrome.browser.infobar.\lAutoLoginAccountDelegate"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAccount",
-		style=dashed];
-
-	Account -> "org.chromium.chrome.browser.signin.\lSigninManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSignInAccount",
-		style=dashed];
 
-	Activity -> "org.chromium.chrome.browser.appmenu.\lAppMenuDragHelper"
-		[color=darkorchid3,
-		dir=back,
+	"Activity" -> "org.chromium.chrome.browser.appmenu.\lAppMenuDragHelper"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mActivity",
-		style=dashed];
+		style="dashed"];
 
-	Activity -> "org.chromium.chrome.browser.appmenu.\lAppMenuHandler"
-		[color=darkorchid3,
-		dir=back,
+	"Activity" -> "org.chromium.chrome.browser.infobar.\lAutoLoginDelegate"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mActivity",
-		style=dashed];
+		style="dashed"];
 
-	Activity -> "org.chromium.chrome.browser.infobar.\lAutoLoginAccountDelegate"
-		[color=darkorchid3,
-		dir=back,
-		label=" mActivity",
-		style=dashed];
-
-	Activity -> "org.chromium.chrome.browser.infobar.\lAutoLoginDelegate"
-		[color=darkorchid3,
-		dir=back,
-		label=" mActivity",
-		style=dashed];
-
-	Activity -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
-		label=" mActivity",
-		style=dashed];
-
-	Activity -> "org.chromium.chrome.browser.signin.\lSigninManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSignInActivity",
-		style=dashed];
-
-	"AdapterView::OnItemClick\lListener" -> "org.chromium.chrome.browser.\lNavigationPopup"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"AdapterView::OnItemSelected\lListener" -> "org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	AlertDialog -> "org.chromium.chrome.browser.\lJavascriptAppModalDialog"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDialog",
-		style=dashed];
-
-	AlertDialog -> "org.chromium.chrome.browser.\lLoginPrompt"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDialog",
-		style=dashed];
-
-	AlertDialog -> "org.chromium.chrome.browser.signin.\lSigninManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mPolicyConfirmationDialog",
-		style=dashed];
-
-	AlertDialog -> "org.chromium.chrome.browser.webapps.\lAddToHomescreenDialog"
-		[color=darkorchid3,
-		dir=back,
-		label=" sCurrentDialog",
-		style=dashed];
-
-	"android::accounts::\lAccountManagerCallback\l\< Bundle \>" -> "org.chromium.chrome.browser.infobar.\lAutoLoginAccountDelegate"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"android::widget::ArrayAdapter\l\< SpinnerLanguageElement \>" -> "org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel.LanguageArray\lAdapter"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	AnimatorListenerAdapter -> "org.chromium.chrome.browser.banners.\lSwipableOverlayView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAnimatorListenerAdapter",
-		style=dashed];
-
-	AnimatorListenerAdapter -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
+	"AnimatorListenerAdapter" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mCloseAnimatorListener\nmActuallyCloseAnimatorListener",
-		style=dashed];
+		style="dashed"];
 
-	Animator -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
-		label=" mActiveAnimation",
-		style=dashed];
-
-	AnimatorSet -> "org.chromium.chrome.browser.banners.\lSwipableOverlayView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mCurrentAnimation",
-		style=dashed];
-
-	AnimatorSet -> "org.chromium.chrome.browser.infobar.\lAnimationHelper"
-		[color=darkorchid3,
-		dir=back,
+	"AnimatorSet" -> "org.chromium.chrome.browser.infobar.\lAnimationHelper"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAnimatorSet",
-		style=dashed];
+		style="dashed"];
 
-	Application -> "org.chromium.chrome.browser.sync.\lChromiumSyncAdapter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mApplication",
-		style=dashed];
-
-	"ApplicationStatus::\lApplicationStateListener" -> "org.chromium.chrome.browser.invalidation.\lInvalidationController"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"ArrayDeque\< InfoBarTransition\lInfo \>" -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
-		label=" mInfoBarTransitions",
-		style=dashed];
-
-	"ArrayList\< ChangeListener \>" -> "org.chromium.chrome.browser.tabmodel.\lTabModelSelectorBase"
-		[color=darkorchid3,
-		dir=back,
-		label=" mChangeListeners",
-		style=dashed];
-
-	"ArrayList\< CustomMenuItem \>" -> "org.chromium.chrome.browser.contextmenu.\lContextMenuParams"
-		[color=darkorchid3,
-		dir=back,
-		label=" mCustomMenuItems",
-		style=dashed];
-
-	"ArrayList\< org.chromium.chrome.browser.appmenu.\lAppMenuObserver \>" -> "org.chromium.chrome.browser.appmenu.\lAppMenuHandler"
-		[color=darkorchid3,
-		dir=back,
-		label=" mObservers",
-		style=dashed];
-
-	"ArrayList\< org.chromium.chrome.browser.infobar.\lInfoBar \>" -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
-		label=" mInfoBars",
-		style=dashed];
-
-	AtomicInteger -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
-		label=" sIdCounter",
-		style=dashed];
-
-	AutofillPopupDelegate -> "org.chromium.chrome.browser.autofill.\lAutofillPopupBridge"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	AutofillPopup -> "org.chromium.chrome.browser.autofill.\lAutofillPopupBridge"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAutofillPopup",
-		style=dashed];
-
-	BaseAdapter -> "org.chromium.chrome.browser.\lNavigationPopup.NavigationAdapter"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	BaseAdapter -> "org.chromium.chrome.browser.appmenu.\lAppMenuAdapter"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	BaseAdapter -> "org.chromium.chrome.browser.autofill.\lPasswordGenerationAdapter"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	BaseAdapter -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	BitmapDrawable -> "org.chromium.chrome.browser.widget.\lTintedDrawable"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	Bitmap -> "org.chromium.chrome.browser.banners.\lRatingView"
-		[color=darkorchid3,
-		dir=back,
+	"Bitmap" -> "org.chromium.chrome.browser.banners.\lRatingView"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mStarHalf\nmStarFull\nmStarEmpty",
-		style=dashed];
+		style="dashed"];
 
-	Bitmap -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
+	"Bitmap" -> "org.chromium.chrome.browser.Tab"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mFavicon",
-		style=dashed];
+		style="dashed"];
 
-	BroadcastReceiver -> "org.chromium.chrome.browser.\lNotificationUIManager"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	Button -> "org.chromium.chrome.browser.\lWebsiteSettingsPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mCopyUrlButton\nmSiteSettingsButton",
-		style=dashed];
-
-	Button -> "org.chromium.chrome.browser.\lWebsiteSettingsPopupLegacy"
-		[color=darkorchid3,
-		dir=back,
-		label=" mResetCertDecisionsButton",
-		style=dashed];
-
-	Button -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mInstallButtonView",
-		style=dashed];
-
-	Button -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
+	"Button" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mUndoButton",
-		style=dashed];
+		style="dashed"];
 
-	ByteBuffer -> "org.chromium.chrome.browser.\lTabState.WebContentsState"
-		[color=darkorchid3,
-		dir=back,
-		label=" mBuffer",
-		style=dashed];
-
-	CheckBox -> "org.chromium.chrome.browser.\lJavascriptAppModalDialog"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSuppressCheckBox",
-		style=dashed];
-
-	CheckBox -> "org.chromium.chrome.browser.infobar.\lTranslateCheckBox"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	Clipboard -> "org.chromium.chrome.browser.\lTab.TabChromeContextMenuItemDelegate"
-		[color=darkorchid3,
-		dir=back,
-		label=" mClipboard",
-		style=dashed];
-
-	ColorStateList -> "org.chromium.chrome.browser.widget.\lTintedDrawable"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTint",
-		style=dashed];
-
-	ColorStateList -> "org.chromium.chrome.browser.widget.\lTintedImageButton"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTint",
-		style=dashed];
-
-	ColorStateList -> "org.chromium.chrome.browser.widget.\lTintedImageView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTint",
-		style=dashed];
-
-	ContentApplication -> "org.chromium.chrome.browser.\lChromiumApplication"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	ContentProvider -> "org.chromium.chrome.browser.\lChromeBrowserProvider"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"ContentUriUtils::FileProviderUtil" -> "org.chromium.chrome.browser.\lFileProviderHelper"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	ContentViewClient -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContentViewClient",
-		style=dashed];
-
-	ContentViewCore -> "org.chromium.chrome.browser.banners.\lAppBannerManager"
-		[color=darkorchid3,
-		dir=back,
+	"ContentViewCore" -> "org.chromium.chrome.browser.banners.\lAppBannerManager"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mContentViewCore",
-		style=dashed];
+		style="dashed"];
 
-	ContentViewCore -> "org.chromium.chrome.browser.banners.\lSwipableOverlayView"
-		[color=darkorchid3,
-		dir=back,
+	"ContentViewCore" -> "org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporter"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mContentViewCore",
-		style=dashed];
+		style="dashed"];
 
-	ContentViewCore -> "org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporter"
-		[color=darkorchid3,
-		dir=back,
+	"ContentViewCore" -> "org.chromium.chrome.browser.Tab"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mContentViewCore",
-		style=dashed];
+		style="dashed"];
 
-	ContentViewCore -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContentViewCore",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.\lLoginPrompt"
-		[color=darkorchid3,
-		dir=back,
+	"Context" -> "org.chromium.chrome.browser.\lNavigationPopup.ListItemFactory"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mContext",
-		style=dashed];
+		style="dashed"];
 
-	Context -> "org.chromium.chrome.browser.\lNavigationPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.\lNavigationPopup.ListItemFactory"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.\lNotificationUIManager"
-		[color=darkorchid3,
-		dir=back,
+	"Context" -> "org.chromium.chrome.browser.\lShortcutHelper"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAppContext",
-		style=dashed];
+		style="dashed"];
 
-	Context -> "org.chromium.chrome.browser.\lShortcutHelper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAppContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.\lWebsiteSettingsPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.\lWebsiteSettingsPopupLegacy"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.autofill.\lPasswordGenerationAdapter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.autofill.\lPasswordGenerationPopupBridge"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.identity.\lSettingsSecureBasedIdentificationGenerator"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.identity.\lUuidBasedUniqueIdentificationGenerator"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.infobar.\lInfoBar"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.invalidation.\lInvalidationController"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.signin.\lSigninManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.sync.\lProfileSyncService"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContext",
-		style=dashed];
-
-	Context -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
+	"Context" -> "org.chromium.chrome.browser.Tab"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mContext\nmApplicationContext",
-		style=dashed];
+		style="dashed"];
 
-	Context -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter"
-		[color=darkorchid3,
-		dir=back,
+	"Context" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mContext",
-		style=dashed];
+		style="dashed"];
 
-	DefaultAndroidKeyStore -> "org.chromium.chrome.browser.\lSSLClientCertificateRequest"
-		[color=darkorchid3,
-		dir=back,
-		label=" sLocalKeyStore",
-		style=dashed];
+	"FrameLayout" -> "org.chromium.chrome.browser.banners.\lSwipableOverlayView"
+		[color="midnightblue",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
+		style="solid"];
 
-	DefaultHandler -> "org.chromium.chrome.browser.omaha.\lXMLParser"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+	"FrameLayout" -> "org.chromium.chrome.browser.infobar.\lContentWrapperView"
+		[color="midnightblue",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
+		style="solid"];
 
-	"DialogInterface::OnClick\lListener" -> "org.chromium.chrome.browser.\lJavascriptAppModalDialog"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	Dialog -> "org.chromium.chrome.browser.\lWebsiteSettingsPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDialog",
-		style=dashed];
-
-	Dialog -> "org.chromium.chrome.browser.\lWebsiteSettingsPopupLegacy"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDialog",
-		style=dashed];
-
-	"DistilledPagePrefs\l::Observer" -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	DistilledPagePrefs -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDistilledPagePrefs",
-		style=dashed];
-
-	Drawable -> "org.chromium.chrome.browser.banners.\lAppData"
-		[color=darkorchid3,
-		dir=back,
-		label=" mIcon",
-		style=dashed];
-
-	DropdownPopupWindow -> "org.chromium.chrome.browser.autofill.\lPasswordGenerationPopupBridge"
-		[color=darkorchid3,
-		dir=back,
-		label=" mPopup",
-		style=dashed];
-
-	EditText -> "org.chromium.chrome.browser.\lLoginPrompt"
-		[color=darkorchid3,
-		dir=back,
-		label=" mPasswordView\nmUsernameView",
-		style=dashed];
-
-	Exception -> "org.chromium.chrome.browser.omaha.\lRequestFailureException"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	FrameLayout -> "org.chromium.chrome.browser.banners.\lSwipableOverlayView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	FrameLayout -> "org.chromium.chrome.browser.infobar.\lContentWrapperView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	FrameLayout -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
+	"FrameLayout" -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAnimationSizer",
-		style=dashed];
+		style="dashed"];
 
-	FrameLayout -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
+	"FrameLayout" -> "org.chromium.chrome.browser.Tab"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mContentViewParent",
-		style=dashed];
+		style="dashed"];
 
-	FrameLayout -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"FutureTask\< SecretKey \>" -> "org.chromium.chrome.browser.\lWebappAuthenticator"
-		[color=darkorchid3,
-		dir=back,
-		label=" sMacKeyGenerator",
-		style=dashed];
-
-	GestureDetector -> "org.chromium.chrome.browser.banners.\lSwipableOverlayView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mGestureDetector",
-		style=dashed];
-
-	GestureDetector -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
+	"GestureDetector" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mSwipeGestureDetector",
-		style=dashed];
+		style="dashed"];
 
-	GestureStateListener -> "org.chromium.chrome.browser.banners.\lSwipableOverlayView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mGestureStateListener",
-		style=dashed];
-
-	Handler -> "org.chromium.chrome.browser.banners.\lInstallerDelegate"
-		[color=darkorchid3,
-		dir=back,
+	"Handler" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mHandler",
-		style=dashed];
+		style="dashed"];
 
-	Handler -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
-		label=" mHandler",
-		style=dashed];
-
-	"HashMap\< org.chromium.chrome.browser.profiles.\lProfile, DomDistillerService \>" -> "org.chromium.chrome.browser.dom\l_distiller.DomDistillerServiceFactory"
-		[color=darkorchid3,
-		dir=back,
-		label=" sServiceMap",
-		style=dashed];
-
-	"HashSet\< String \>" -> "org.chromium.chrome.browser.\lUrlUtilities"
-		[color=darkorchid3,
-		dir=back,
-		label=" FALLBACK_VALID_SCHEMES\nACCEPTED_SCHEMES\nDOWNLOADABLE_SCHEMES",
-		style=dashed];
-
-	ImageButton -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=darkorchid3,
-		dir=back,
+	"ImageButton" -> "org.chromium.chrome.browser.banners.\lAppBannerView"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mCloseButtonView",
-		style=dashed];
+		style="dashed"];
 
-	ImageButton -> "org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReportingView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mNoButton\nmYesButton",
-		style=dashed];
-
-	ImageButton -> "org.chromium.chrome.browser.infobar.\lInfoBarLayout"
-		[color=darkorchid3,
-		dir=back,
+	"ImageButton" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mCloseButton",
-		style=dashed];
+		style="dashed"];
 
-	ImageButton -> "org.chromium.chrome.browser.widget.\lTintedImageButton"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	ImageButton -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
-		label=" mCloseButton",
-		style=dashed];
-
-	ImageButton -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelWrapper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mIncognitoButton\nmStandardButton",
-		style=dashed];
-
-	ImageView -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mIconView",
-		style=dashed];
-
-	ImageView -> "org.chromium.chrome.browser.infobar.\lInfoBarLayout"
-		[color=darkorchid3,
-		dir=back,
-		label=" mIconView",
-		style=dashed];
-
-	ImageView -> "org.chromium.chrome.browser.widget.\lTintedImageView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	ImageView -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
+	"ImageView" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mFaviconView",
-		style=dashed];
+		style="dashed"];
 
-	IntentCallback -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	Interpolator -> "org.chromium.chrome.browser.banners.\lSwipableOverlayView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mInterpolator",
-		style=dashed];
-
-	InvalidationClientNameGenerator -> "org.chromium.chrome.browser.invalidation.\lUniqueIdInvalidationClientNameGenerator"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	LayoutInflater -> "org.chromium.chrome.browser.appmenu.\lAppMenuAdapter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mInflater",
-		style=dashed];
-
-	LinearLayout -> "org.chromium.chrome.browser.\lWebsiteSettingsPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContainer\nmPermissionsList",
-		style=dashed];
-
-	LinearLayout -> "org.chromium.chrome.browser.\lWebsiteSettingsPopupLegacy"
-		[color=darkorchid3,
-		dir=back,
-		label=" mContainer",
-		style=dashed];
-
-	LinearLayout -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	LinearLayout -> "org.chromium.chrome.browser.infobar.\lAnimationHelper"
-		[color=darkorchid3,
-		dir=back,
+	"LinearLayout" -> "org.chromium.chrome.browser.infobar.\lAnimationHelper"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mLinearLayout",
-		style=dashed];
+		style="dashed"];
 
-	LinearLayout -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
-		label=" mLinearLayout",
-		style=dashed];
-
-	LinearLayout -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
+	"LinearLayout" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mUndoContents\nmTabContents",
-		style=dashed];
+		style="dashed"];
 
-	LinearLayout -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelWrapper"
-		[color=darkorchid3,
-		dir=back,
+	"LinearLayout" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelWrapper"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mStackButtonWrapper",
-		style=dashed];
-
-	"List\< BookmarkNode \>" -> "org.chromium.chrome.browser.\lChromeBrowserProvider.BookmarkNode"
-		[color=darkorchid3,
-		dir=back,
-		label=" mChildren",
-		style=dashed];
-
-	"List\< DelayedBookmarkCallback \>" -> "org.chromium.chrome.browser.\lBookmarksBridge"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDelayedBookmarkCallbacks",
-		style=dashed];
-
-	"List\< Integer \>" -> "org.chromium.chrome.browser.autofill.\lPasswordGenerationAdapter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mViewTypes",
-		style=dashed];
-
-	"List\< MenuItem \>" -> "org.chromium.chrome.browser.appmenu.\lAppMenuAdapter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mMenuItems",
-		style=dashed];
-
-	"List\< Node \>" -> "org.chromium.chrome.browser.omaha.\lXMLParser.Node"
-		[color=darkorchid3,
-		dir=back,
-		label=" children",
-		style=dashed];
-
-	"List\< org.chromium.chrome.browser.\lTab \>" -> "org.chromium.chrome.browser.tabmodel.\lTabModelBase"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTabs",
-		style=dashed];
+		style="dashed"];
 
 	"List\< org.chromium.chrome.browser.\lTab \>" -> "org.chromium.chrome.browser.tabmodel.\lTabModelBase.RewoundList"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mRewoundTabs",
-		style=dashed];
+		style="dashed"];
 
-	"List\< org.chromium.chrome.browser.autofill.\lPersonalDataManager.PersonalDataManagerObserver \>" -> "org.chromium.chrome.browser.autofill.\lPersonalDataManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDataObservers",
-		style=dashed];
-
-	"List\< org.chromium.chrome.browser.sync.\lProfileSyncService.SyncStateChangedListener \>" -> "org.chromium.chrome.browser.sync.\lProfileSyncService"
-		[color=darkorchid3,
-		dir=back,
-		label=" mListeners",
-		style=dashed];
-
-	"List\< org.chromium.chrome.browser.tabmodel.\lTabModel \>" -> "org.chromium.chrome.browser.tabmodel.\lTabModelSelectorBase"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTabModels",
-		style=dashed];
-
-	"List\< TextField \>" -> "org.chromium.chrome.browser.omnibox.\lSuggestionAnswer.ImageLine"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTextFields",
-		style=dashed];
-
-	ListPopupWindow -> "org.chromium.chrome.browser.\lNavigationPopup"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	ListPopupWindow -> "org.chromium.chrome.browser.appmenu.\lAppMenu"
-		[color=darkorchid3,
-		dir=back,
-		label=" mPopup",
-		style=dashed];
-
-	ListView -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"Map\< org.chromium.chrome.browser.accessibility.\lFontSizePrefs.Observer, FontSizePrefsObserver\lWrapper \>" -> "org.chromium.chrome.browser.accessibility.\lFontSizePrefs"
-		[color=darkorchid3,
-		dir=back,
-		label=" mObserverMap",
-		style=dashed];
-
-	"Map\< org.chromium.chrome.browser.profiles.\lProfile, InvalidationService \>" -> "org.chromium.chrome.browser.invalidation.\lInvalidationServiceFactory"
-		[color=darkorchid3,
-		dir=back,
-		label=" sServiceMap",
-		style=dashed];
-
-	"Map\< String, org.chromium.chrome.browser.identity.\lUniqueIdentificationGenerator \>" -> "org.chromium.chrome.browser.identity.\lUniqueIdentificationGeneratorFactory"
-		[color=darkorchid3,
-		dir=back,
-		label=" GENERATOR_MAP",
-		style=dashed];
-
-	"Map\< String, String \>" -> "org.chromium.chrome.browser.omaha.\lXMLParser.Node"
-		[color=darkorchid3,
-		dir=back,
-		label=" attributes",
-		style=dashed];
-
-	"Map\< Theme, RadioButton \>" -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mColorModeButtons",
-		style=dashed];
-
-	MenuInflater -> "org.chromium.chrome.browser.contextmenu.\lChromeContextMenuPopulator"
-		[color=darkorchid3,
-		dir=back,
-		label=" mMenuInflater",
-		style=dashed];
-
-	Menu -> "org.chromium.chrome.browser.appmenu.\lAppMenu"
-		[color=darkorchid3,
-		dir=back,
+	"Menu" -> "org.chromium.chrome.browser.appmenu.\lAppMenu"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mMenu",
-		style=dashed];
+		style="dashed"];
 
-	Menu -> "org.chromium.chrome.browser.appmenu.\lAppMenuHandler"
-		[color=darkorchid3,
-		dir=back,
+	"Menu" -> "org.chromium.chrome.browser.appmenu.\lAppMenuHandler"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mMenu",
-		style=dashed];
+		style="dashed"];
 
-	NavigationController -> "org.chromium.chrome.browser.\lNavigationPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mNavigationController",
-		style=dashed];
-
-	NavigationHistory -> "org.chromium.chrome.browser.\lNavigationPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mHistory",
-		style=dashed];
-
-	NotificationManager -> "org.chromium.chrome.browser.\lNotificationUIManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mNotificationManager",
-		style=dashed];
-
-	NumberFormat -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mPercentageFormatter",
-		style=dashed];
-
-	"ObserverList\< BookmarkModel\lObserver \>" -> "org.chromium.chrome.browser.\lBookmarksBridge"
-		[color=darkorchid3,
-		dir=back,
-		label=" mObservers",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.\lApplicationLifetime.Observer \>" -> "org.chromium.chrome.browser.\lApplicationLifetime"
-		[color=darkorchid3,
-		dir=back,
-		label=" sObservers",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.\lEnhancedBookmarksBridge.FiltersObserver \>" -> "org.chromium.chrome.browser.\lEnhancedBookmarksBridge"
-		[color=darkorchid3,
-		dir=back,
-		label=" mFilterObservers",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.\lEnhancedBookmarksBridge.SearchServiceObserver \>" -> "org.chromium.chrome.browser.\lEnhancedBookmarksBridge"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSearchObservers",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.\lPasswordUIView.PasswordListObserver \>" -> "org.chromium.chrome.browser.\lPasswordUIView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mObservers",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.\lTabObserver \>" -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
-		label=" mObservers",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.profiles.\lProfileDownloader.Observer \>" -> "org.chromium.chrome.browser.profiles.\lProfileDownloader"
-		[color=darkorchid3,
-		dir=back,
-		label=" sObservers",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.search\l_engines.TemplateUrlService.LoadListener \>" -> "org.chromium.chrome.browser.search\l_engines.TemplateUrlService"
-		[color=darkorchid3,
-		dir=back,
-		label=" mLoadListeners",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.signin.\lOAuth2TokenService.OAuth2TokenServiceObserver \>" -> "org.chromium.chrome.browser.signin.\lOAuth2TokenService"
-		[color=darkorchid3,
-		dir=back,
-		label=" mObservers",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.signin.\lSigninManager.SignInAllowedObserver \>" -> "org.chromium.chrome.browser.signin.\lSigninManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSignInAllowedObservers",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.signin.\lSigninManager.SignInStateObserver \>" -> "org.chromium.chrome.browser.signin.\lSigninManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSignInStateObservers",
-		style=dashed];
-
-	"ObserverList\< org.chromium.chrome.browser.tabmodel.\lTabModelObserver \>" -> "org.chromium.chrome.browser.tabmodel.\lTabModelBase"
-		[color=darkorchid3,
-		dir=back,
-		label=" mObservers",
-		style=dashed];
-
-	OnCheckedChangeListener -> "org.chromium.chrome.browser.infobar.\lTranslateCheckBox"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnClickListener -> "org.chromium.chrome.browser.\lWebsiteSettingsPopup"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnClickListener -> "org.chromium.chrome.browser.\lWebsiteSettingsPopupLegacy"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnClickListener -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnClickListener -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnCreateContextMenuListener -> "org.chromium.chrome.browser.contextmenu.\lContextMenuHelper"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnItemClickListener -> "org.chromium.chrome.browser.appmenu.\lAppMenu"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnItemClickListener -> "org.chromium.chrome.browser.autofill.\lPasswordGenerationPopupBridge"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnItemSelectedListener -> "org.chromium.chrome.browser.\lWebsiteSettingsPopup"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnKeyListener -> "org.chromium.chrome.browser.appmenu.\lAppMenu"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnMenuItemClickListener -> "org.chromium.chrome.browser.contextmenu.\lContextMenuHelper"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"OnSharedPreferenceChange\lListener" -> "org.chromium.chrome.browser.accessibility.\lFontSizePrefs"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	OnTouchListener -> "org.chromium.chrome.browser.appmenu.\lAppMenuButtonHelper"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.\lChromeBrowserProvider.BookmarkNode" -> "org.chromium.chrome.browser.\lChromeBrowserProvider"
-		[color=darkorchid3,
-		dir=back,
-		label=" mMobileBookmarksFolder",
-		style=dashed];
+	"OnClickListener" -> "org.chromium.chrome.browser.banners.\lAppBannerView"
+		[color="midnightblue",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
+		style="solid"];
 
 	"org.chromium.chrome.browser.\lChromeBrowserProvider.BookmarkNode" -> "org.chromium.chrome.browser.\lChromeBrowserProvider.BookmarkNode"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mParent",
-		style=dashed];
-
-	"org.chromium.chrome.browser.\lChromeBrowserProvider.Type" -> "org.chromium.chrome.browser.\lChromeBrowserProvider.BookmarkNode"
-		[color=darkorchid3,
-		dir=back,
-		label=" mType",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.\lChromeHttpAuthHandler.AutofillObserver" -> "org.chromium.chrome.browser.\lChromeHttpAuthHandler"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAutofillObserver",
-		style=dashed];
-
-	"org.chromium.chrome.browser.\lChromeHttpAuthHandler.AutofillObserver" -> "org.chromium.chrome.browser.\lLoginPrompt"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.\lChromeHttpAuthHandler" -> "org.chromium.chrome.browser.\lLoginPrompt"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAuthHandler",
-		style=dashed];
-
-	"org.chromium.chrome.browser.\lChromeWebContentsDelegateAndroid" -> "org.chromium.chrome.browser.\lTab.TabChromeWebContentsDelegate\lAndroid"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.\lNativePage" -> "org.chromium.chrome.browser.\lFrozenNativePage"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.\lNativePage" -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
-		label=" mNativePage",
-		style=dashed];
-
-	"org.chromium.chrome.browser.\lNavigationPopup.ListItemFactory" -> "org.chromium.chrome.browser.\lNavigationPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mListItemFactory",
-		style=dashed];
-
-	"org.chromium.chrome.browser.\lNavigationPopup.NavigationAdapter" -> "org.chromium.chrome.browser.\lNavigationPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAdapter",
-		style=dashed];
-
-	"org.chromium.chrome.browser.\lShortcutHelper.OnInitialized" -> "org.chromium.chrome.browser.\lShortcutHelper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mCallback",
-		style=dashed];
-
-	"org.chromium.chrome.browser.\lTab.TabChromeWebContentsDelegate\lAndroid" -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
-		label=" mWebContentsDelegate",
-		style=dashed];
-
-	"org.chromium.chrome.browser.\lTabObserver" -> "org.chromium.chrome.browser.\lEmptyTabObserver"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.\lTabObserver" -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTabObserver",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.\lTabObserver" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mTabObserver",
-		style=dashed];
-
-	"org.chromium.chrome.browser.\lTabState.WebContentsState" -> "org.chromium.chrome.browser.\lTabState"
-		[color=darkorchid3,
-		dir=back,
-		label=" contentsState",
-		style=dashed];
-
-	"org.chromium.chrome.browser.\lVoiceSearchTabHelper" -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
-		label=" mVoiceSearchTabHelper",
-		style=dashed];
-
-	"org.chromium.chrome.browser.accessibility.\lFontSizePrefs.Observer" -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.accessibility.\lFontSizePrefs" -> "org.chromium.chrome.browser.accessibility.\lFontSizePrefs"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" sFontSizePrefs",
-		style=dashed];
-
-	"org.chromium.chrome.browser.accessibility.\lFontSizePrefs" -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mFontSizePrefs",
-		style=dashed];
-
-	"org.chromium.chrome.browser.appmenu.\lAppMenuAdapter" -> "org.chromium.chrome.browser.appmenu.\lAppMenu"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAdapter",
-		style=dashed];
-
-	"org.chromium.chrome.browser.appmenu.\lAppMenuDragHelper" -> "org.chromium.chrome.browser.appmenu.\lAppMenuHandler"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAppMenuDragHelper",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.appmenu.\lAppMenuHandler" -> "org.chromium.chrome.browser.appmenu.\lAppMenu"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mHandler",
-		style=dashed];
-
-	"org.chromium.chrome.browser.appmenu.\lAppMenuHandler" -> "org.chromium.chrome.browser.appmenu.\lAppMenuButtonHelper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mMenuHandler",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.appmenu.\lAppMenu" -> "org.chromium.chrome.browser.appmenu.\lAppMenuAdapter"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAppMenu",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.appmenu.\lAppMenu" -> "org.chromium.chrome.browser.appmenu.\lAppMenuDragHelper"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAppMenu",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.appmenu.\lAppMenu" -> "org.chromium.chrome.browser.appmenu.\lAppMenuHandler"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAppMenu",
-		style=dashed];
-
-	"org.chromium.chrome.browser.appmenu.\lAppMenuPropertiesDelegate" -> "org.chromium.chrome.browser.appmenu.\lAppMenuHandler"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDelegate",
-		style=dashed];
-
-	"org.chromium.chrome.browser.autofill.\lAutofillDialogControllerAndroid.Autofill\lDialogFactory" -> "org.chromium.chrome.browser.autofill.\lAutofillDialogControllerAndroid"
-		[color=darkorchid3,
-		dir=back,
-		label=" sDialogFactory",
-		style=dashed];
-
-	"org.chromium.chrome.browser.autofill.\lAutofillDialogControllerAndroid.AutofillDialog" -> "org.chromium.chrome.browser.autofill.\lAutofillDialogControllerAndroid"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDialog",
-		style=dashed];
-
-	"org.chromium.chrome.browser.autofill.\lAutofillLogger.Logger" -> "org.chromium.chrome.browser.autofill.\lAutofillLogger"
-		[color=darkorchid3,
-		dir=back,
-		label=" sLogger",
-		style=dashed];
-
-	"org.chromium.chrome.browser.autofill.\lPasswordGenerationAdapter.Delegate" -> "org.chromium.chrome.browser.autofill.\lPasswordGenerationAdapter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDelegate",
-		style=dashed];
-
-	"org.chromium.chrome.browser.autofill.\lPasswordGenerationAdapter.Delegate" -> "org.chromium.chrome.browser.autofill.\lPasswordGenerationPopupBridge"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.autofill.\lPersonalDataManager" -> "org.chromium.chrome.browser.autofill.\lPersonalDataManager"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" sManager",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.banners.\lAppBannerManager" -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAppBannerManager",
-		style=dashed];
-
-	"org.chromium.chrome.browser.banners.\lAppBannerView.Observer" -> "org.chromium.chrome.browser.banners.\lAppBannerManager"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.banners.\lAppBannerView" -> "org.chromium.chrome.browser.banners.\lAppBannerManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mBannerView",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.banners.\lAppBannerView" -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mObserver",
-		style=dashed];
-
-	"org.chromium.chrome.browser.banners.\lAppData" -> "org.chromium.chrome.browser.banners.\lAppBannerManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAppData",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.banners.\lAppData" -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAppData",
-		style=dashed];
-
-	"org.chromium.chrome.browser.banners.\lAppDetailsDelegate.Observer" -> "org.chromium.chrome.browser.banners.\lAppBannerManager"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.banners.\lAppDetailsDelegate" -> "org.chromium.chrome.browser.banners.\lAppBannerManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" sAppDetailsDelegate",
-		style=dashed];
-
-	"org.chromium.chrome.browser.banners.\lInstallerDelegate.Observer" -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.banners.\lInstallerDelegate.Observer" -> "org.chromium.chrome.browser.banners.\lInstallerDelegate"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mObserver",
-		style=dashed];
-
-	"org.chromium.chrome.browser.banners.\lInstallerDelegate" -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mInstallTask",
-		style=dashed];
-
-	"org.chromium.chrome.browser.banners.\lRatingView" -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mRatingView",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.banners.\lSwipableOverlayView" -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.banners.\lSwipableOverlayView" -> "org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReportingView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.contextmenu.\lChromeContextMenuItemDelegate" -> "org.chromium.chrome.browser.contextmenu.\lChromeContextMenuPopulator"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDelegate",
-		style=dashed];
-
-	"org.chromium.chrome.browser.contextmenu.\lChromeContextMenuItemDelegate" -> "org.chromium.chrome.browser.contextmenu.\lEmptyChromeContextMenuItemDelegate"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.contextmenu.\lContextMenuParams" -> "org.chromium.chrome.browser.contextmenu.\lContextMenuHelper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mCurrentContextMenuParams",
-		style=dashed];
-
-	"org.chromium.chrome.browser.contextmenu.\lContextMenuPopulator" -> "org.chromium.chrome.browser.contextmenu.\lChromeContextMenuPopulator"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.contextmenu.\lContextMenuPopulator" -> "org.chromium.chrome.browser.contextmenu.\lContextMenuHelper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mPopulator",
-		style=dashed];
+		[color="midnightblue",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
+		style="solid"];
 
 	"org.chromium.chrome.browser.contextmenu.\lContextMenuPopulator" -> "org.chromium.chrome.browser.contextmenu.\lContextMenuPopulatorWrapper"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mPopulator",
-		style=dashed];
-
-	"org.chromium.chrome.browser.contextmenu.\lContextMenuPopulatorWrapper" -> "org.chromium.chrome.browser.\lTab.TabContextMenuPopulator"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.contextmenu.\lEmptyChromeContextMenuItemDelegate" -> "org.chromium.chrome.browser.\lTab.TabChromeContextMenuItemDelegate"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporter" -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mDomDistillerFeedbackReporter",
-		style=dashed];
-
-	"org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporting\lView.FeedbackObserver" -> "org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporter"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporting\lView.FeedbackObserver" -> "org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReportingView"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mFeedbackObserver",
-		style=dashed];
-
-	"org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReportingView" -> "org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mReportingView",
-		style=dashed];
-
-	"org.chromium.chrome.browser.dom\l_distiller.ExternalFeedbackReporter" -> "org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporter"
-		[color=darkorchid3,
-		dir=back,
-		label=" sExternalFeedbackReporter",
-		style=dashed];
-
-	"org.chromium.chrome.browser.identity.\lUniqueIdentificationGenerator" -> "org.chromium.chrome.browser.identity.\lSettingsSecureBasedIdentificationGenerator"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.identity.\lUniqueIdentificationGenerator" -> "org.chromium.chrome.browser.identity.\lUuidBasedUniqueIdentificationGenerator"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.identity.\lUniqueIdentificationGenerator" -> "org.chromium.chrome.browser.invalidation.\lUniqueIdInvalidationClientNameGenerator"
-		[color=darkorchid3,
-		dir=back,
-		label=" mGenerator",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.infobar.\lAnimationHelper" -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAnimation",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lAutoLoginDelegate" -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAutoLoginDelegate",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lAutoLoginProcessor" -> "org.chromium.chrome.browser.infobar.\lAutoLoginAccountDelegate"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAutoLoginProcessor",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lAutoLoginProcessor" -> "org.chromium.chrome.browser.infobar.\lAutoLoginDelegate"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAutoLoginProcessor",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lConfirmInfoBar" -> "org.chromium.chrome.browser.infobar.\lDataReductionProxyInfoBar"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.infobar.\lContentWrapperView" -> "org.chromium.chrome.browser.infobar.\lAnimationHelper"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mTargetWrapperView",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.infobar.\lContentWrapperView" -> "org.chromium.chrome.browser.infobar.\lInfoBar"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mContentView",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarContainer.InfoBarAnimationListener" -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAnimationListener",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.infobar.\lInfoBarContainer" -> "org.chromium.chrome.browser.infobar.\lAnimationHelper"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mContainer",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.infobar.\lInfoBarContainer" -> "org.chromium.chrome.browser.infobar.\lInfoBar"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mContainer",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarContainer" -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
-		label=" mInfoBarContainer",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarLayout.Group" -> "org.chromium.chrome.browser.infobar.\lInfoBarLayout"
-		[color=darkorchid3,
-		dir=back,
-		label=" mCustomGroup\nmButtonGroup\nmMainGroup",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarListeners.Dismiss" -> "org.chromium.chrome.browser.infobar.\lInfoBarListeners.Confirm"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.infobar.\lInfoBarListeners" -> "org.chromium.chrome.browser.infobar.\lConfirmInfoBar"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mConfirmListener",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarListeners" -> "org.chromium.chrome.browser.infobar.\lInfoBar"
-		[color=darkorchid3,
-		dir=back,
-		label=" mListener",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.infobar.\lInfoBar" -> "org.chromium.chrome.browser.infobar.\lAnimationHelper"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mInfoBar",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBar" -> "org.chromium.chrome.browser.infobar.\lConfirmInfoBar"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.infobar.\lInfoBar" -> "org.chromium.chrome.browser.infobar.\lContentWrapperView"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mInfoBar",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBar" -> "org.chromium.chrome.browser.infobar.\lGeneratedPasswordSavedInfoBar"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBar" -> "org.chromium.chrome.browser.infobar.\lMessageInfoBar"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBar" -> "org.chromium.chrome.browser.infobar.\lTranslateInfoBar"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarView" -> "org.chromium.chrome.browser.infobar.\lInfoBar"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.infobar.\lInfoBarView" -> "org.chromium.chrome.browser.infobar.\lInfoBarLayout"
-		[color=darkorchid3,
-		dir=back,
-		label=" mInfoBarView",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lSubPanelListener" -> "org.chromium.chrome.browser.infobar.\lTranslateAlwaysPanel"
-		[color=darkorchid3,
-		dir=back,
-		label=" mListener",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lSubPanelListener" -> "org.chromium.chrome.browser.infobar.\lTranslateCheckBox"
-		[color=darkorchid3,
-		dir=back,
-		label=" mListener",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lSubPanelListener" -> "org.chromium.chrome.browser.infobar.\lTranslateInfoBar"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.infobar.\lSubPanelListener" -> "org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel"
-		[color=darkorchid3,
-		dir=back,
-		label=" mListener",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lSubPanelListener" -> "org.chromium.chrome.browser.infobar.\lTranslateNeverPanel"
-		[color=darkorchid3,
-		dir=back,
-		label=" mListener",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.infobar.\lTranslateInfoBarDelegate" -> "org.chromium.chrome.browser.infobar.\lTranslateInfoBar"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mTranslateDelegate",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.infobar.\lTranslateInfoBar" -> "org.chromium.chrome.browser.infobar.\lTranslateInfoBarDelegate"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mInfoBar",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel.LanguageArray\lAdapter" -> "org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSourceAdapter\nmTargetAdapter",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateOptions" -> "org.chromium.chrome.browser.infobar.\lTranslateAlwaysPanel"
-		[color=darkorchid3,
-		dir=back,
-		label=" mOptions",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateOptions" -> "org.chromium.chrome.browser.infobar.\lTranslateCheckBox"
-		[color=darkorchid3,
-		dir=back,
-		label=" mOptions",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateOptions" -> "org.chromium.chrome.browser.infobar.\lTranslateInfoBar"
-		[color=darkorchid3,
-		dir=back,
-		label=" mOptions",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateOptions" -> "org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSessionOptions\nmOptions",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateOptions" -> "org.chromium.chrome.browser.infobar.\lTranslateNeverPanel"
-		[color=darkorchid3,
-		dir=back,
-		label=" mOptions",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateSubPanel" -> "org.chromium.chrome.browser.infobar.\lTranslateAlwaysPanel"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateSubPanel" -> "org.chromium.chrome.browser.infobar.\lTranslateInfoBar"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSubPanel",
-		style=dashed];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateSubPanel" -> "org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.infobar.\lTranslateSubPanel" -> "org.chromium.chrome.browser.infobar.\lTranslateNeverPanel"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.invalidation.\lInvalidationController" -> "org.chromium.chrome.browser.invalidation.\lInvalidationController"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" sInstance",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.net.spdyproxy.\lDataReductionProxySettings" -> "org.chromium.chrome.browser.net.spdyproxy.\lDataReductionProxySettings"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" sSettings",
-		style=dashed];
-
-	"org.chromium.chrome.browser.omaha.\lXMLParser.Node" -> "org.chromium.chrome.browser.omaha.\lXMLParser"
-		[color=darkorchid3,
-		dir=back,
-		label=" mRootNode",
-		style=dashed];
-
-	"org.chromium.chrome.browser.omnibox.\lAutocompleteController.OnSuggestions\lReceivedListener" -> "org.chromium.chrome.browser.omnibox.\lAutocompleteController"
-		[color=darkorchid3,
-		dir=back,
-		label=" mListener",
-		style=dashed];
-
-	"org.chromium.chrome.browser.omnibox.\lOmniboxSuggestion.Type" -> "org.chromium.chrome.browser.omnibox.\lOmniboxSuggestion"
-		[color=darkorchid3,
-		dir=back,
-		label=" mType",
-		style=dashed];
-
-	"org.chromium.chrome.browser.omnibox.\lSuggestionAnswer.ImageLine" -> "org.chromium.chrome.browser.omnibox.\lSuggestionAnswer"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSecondLine\nmFirstLine",
-		style=dashed];
-
-	"org.chromium.chrome.browser.omnibox.\lSuggestionAnswer.TextField" -> "org.chromium.chrome.browser.omnibox.\lSuggestionAnswer.ImageLine"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAdditionalText\nmStatusText",
-		style=dashed];
-
-	"org.chromium.chrome.browser.omnibox.\lSuggestionAnswer" -> "org.chromium.chrome.browser.omnibox.\lOmniboxSuggestion"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAnswer",
-		style=dashed];
-
-	"org.chromium.chrome.browser.password\l_manager.PasswordAuthenticationManager.\lPasswordAuthenticationDelegate" -> "org.chromium.chrome.browser.password\l_manager.PasswordAuthenticationManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" sDelegate",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.preferences.\lNetworkPredictionOptions" -> "org.chromium.chrome.browser.preferences.\lNetworkPredictionOptions"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" DEFAULT",
-		style=dashed];
-
-	"org.chromium.chrome.browser.preferences.\lPrefServiceBridge.OnClearBrowsingDataListener" -> "org.chromium.chrome.browser.preferences.\lPrefServiceBridge"
-		[color=darkorchid3,
-		dir=back,
-		label=" mClearBrowsingDataListener",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.preferences.\lPrefServiceBridge" -> "org.chromium.chrome.browser.preferences.\lPrefServiceBridge"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" sInstance",
-		style=dashed];
-
-	"org.chromium.chrome.browser.profiles.\lProfile" -> "org.chromium.chrome.browser.\lBookmarksBridge"
-		[color=darkorchid3,
-		dir=back,
-		label=" mProfile",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.search\l_engines.TemplateUrlService" -> "org.chromium.chrome.browser.search\l_engines.TemplateUrlService"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" sService",
-		style=dashed];
-
-	"org.chromium.chrome.browser.signin.\lAccountManagementScreenHelper.Account\lManagementScreenManager" -> "org.chromium.chrome.browser.signin.\lAccountManagementScreenHelper"
-		[color=darkorchid3,
-		dir=back,
-		label=" sManager",
-		style=dashed];
-
-	"org.chromium.chrome.browser.signin.\lSigninManager.SignInFlowObserver" -> "org.chromium.chrome.browser.signin.\lSigninManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSignInFlowObserver",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.signin.\lSigninManager" -> "org.chromium.chrome.browser.signin.\lSigninManager"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" sSigninManager",
-		style=dashed];
-
-	"org.chromium.chrome.browser.sync.\lChromiumSyncAdapter" -> "org.chromium.chrome.browser.sync.\lChromiumSyncAdapterService"
-		[color=darkorchid3,
-		dir=back,
-		label=" sSyncAdapter",
-		style=dashed];
-
-	"org.chromium.chrome.browser.sync.\lGoogleServiceAuthError.State" -> "org.chromium.chrome.browser.sync.\lGoogleServiceAuthError"
-		[color=darkorchid3,
-		dir=back,
-		label=" mState",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.sync.\lProfileSyncService" -> "org.chromium.chrome.browser.sync.\lProfileSyncService"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" sSyncSetupManager",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.tabmodel.\lTabList" -> "org.chromium.chrome.browser.tabmodel.\lTabModel"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+		[color="midnightblue",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
+		style="solid"];
 
 	"org.chromium.chrome.browser.tabmodel.\lTabList" -> "org.chromium.chrome.browser.tabmodel.\lTabModelBase.RewoundList"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabList" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mUndoneTabModel",
-		style=dashed];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelBase.RewoundList" -> "org.chromium.chrome.browser.tabmodel.\lTabModelBase"
-		[color=darkorchid3,
-		dir=back,
-		label=" mRewoundList",
-		style=dashed];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelDelegate" -> "org.chromium.chrome.browser.tabmodel.\lTabModelBase"
-		[color=darkorchid3,
-		dir=back,
-		label=" mModelDelegate",
-		style=dashed];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelJniBridge" -> "org.chromium.chrome.browser.tabmodel.\lTabModelBase"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelObserver" -> "org.chromium.chrome.browser.tabmodel.\lEmptyTabModelObserver"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelOrderController" -> "org.chromium.chrome.browser.tabmodel.\lTabModelBase"
-		[color=darkorchid3,
-		dir=back,
-		label=" mOrderController",
-		style=dashed];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModel" -> "org.chromium.chrome.browser.tabmodel.\lEmptyTabModel"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModel" -> "org.chromium.chrome.browser.tabmodel.\lTabModelJniBridge"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModel" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mActualTabModel",
-		style=dashed];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelSelector" -> "org.chromium.chrome.browser.tabmodel.\lTabModelOrderController"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTabModelSelector",
-		style=dashed];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelSelector" -> "org.chromium.chrome.browser.tabmodel.\lTabModelSelectorBase"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"org.chromium.chrome.browser.tabmodel.\lTabModelSelector" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelWrapper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTabModelSelector\nmTabModelChangeListener",
-		style=dashed];
-
-	"org.chromium.chrome.browser.Tab" -> "org.chromium.chrome.browser.\lShortcutHelper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTab",
-		style=dashed];
+		[color="midnightblue",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
+		style="solid"];
 
 	"org.chromium.chrome.browser.Tab" -> "org.chromium.chrome.browser.banners.\lAppBannerManager"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mTab",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.Tab" -> "org.chromium.chrome.browser.dom\l_distiller.DomDistillerFeedbackReporter"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mTab",
-		style=dashed];
-
-	"org.chromium.chrome.browser.Tab" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTab",
-		style=dashed];
-
-	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter.AccessibilityTabModel\lAdapterListener" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mListener",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListView"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mAdapter",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem.AccessibilityTab\lModelListItemListener" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mInternalListener",
-		style=dashed];
-
-	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem.AccessibilityTab\lModelListItemListener" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
-		label=" mListener",
-		style=dashed];
+		style="dashed"];
 
 	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListView" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelAdapter"
-		[color=darkorchid3,
-		dir=back,
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mCanScrollListener",
-		style=dashed];
+		style="dashed"];
 
-	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListView" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
-		label=" mCanScrollListener",
-		style=dashed];
-
-	"org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListView" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelWrapper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAccessibilityView",
-		style=dashed];
-
-	PackageManager -> "org.chromium.chrome.browser.banners.\lInstallerDelegate"
-		[color=darkorchid3,
-		dir=back,
-		label=" mPackageManager",
-		style=dashed];
-
-	Paint -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTopBorderPaint",
-		style=dashed];
-
-	"Pair\< Long, org.chromium.chrome.browser.infobar.\lAutoLoginAccountDelegate \>" -> "org.chromium.chrome.browser.infobar.\lAutoLoginDelegate"
-		[color=darkorchid3,
-		dir=back,
-		label=" mAccountHelper",
-		style=dashed];
-
-	Parcelable -> "org.chromium.chrome.browser.\lChromeBrowserProvider.BookmarkNode"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	PendingIntent -> "org.chromium.chrome.browser.banners.\lAppData"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDetailsIntent\nmInstallIntent",
-		style=dashed];
-
-	"PopupWindow::OnDismissListener" -> "org.chromium.chrome.browser.autofill.\lPasswordGenerationPopupBridge"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	Printable -> "org.chromium.chrome.browser.printing.\lTabPrinter"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	ProgressDialog -> "org.chromium.chrome.browser.signin.\lSigninManager"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSignOutProgressDialog",
-		style=dashed];
-
-	RadioGroup -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mRadioGroup",
-		style=dashed];
-
-	RectF -> "org.chromium.chrome.browser.\lFindMatchRectsDetails"
-		[color=darkorchid3,
-		dir=back,
-		label=" activeRect\nrects",
-		style=dashed];
-
-	Rect -> "org.chromium.chrome.browser.\lFindNotificationDetails"
-		[color=darkorchid3,
-		dir=back,
-		label=" rendererSelectionRect",
-		style=dashed];
-
-	Rect -> "org.chromium.chrome.browser.appmenu.\lAppMenuDragHelper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mScreenVisibleRect",
-		style=dashed];
-
-	Rect -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=darkorchid3,
-		dir=back,
+	"Rect" -> "org.chromium.chrome.browser.banners.\lAppBannerView"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mBackgroundDrawablePadding",
-		style=dashed];
+		style="dashed"];
 
-	Rect -> "org.chromium.chrome.browser.banners.\lRatingView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDrawingRect",
-		style=dashed];
-
-	Referrer -> "org.chromium.chrome.browser.contextmenu.\lContextMenuParams"
-		[color=darkorchid3,
-		dir=back,
-		label=" mReferrer",
-		style=dashed];
-
-	Runnable -> "org.chromium.chrome.browser.banners.\lInstallerDelegate"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	ScrollView -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	SecretKey -> "org.chromium.chrome.browser.\lWebappAuthenticator"
-		[color=darkorchid3,
-		dir=back,
-		label=" sKey",
-		style=dashed];
-
-	"SeekBar::OnSeekBarChange\lListener" -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	SeekBar -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mFontScaleSeekBar",
-		style=dashed];
-
-	Service -> "org.chromium.chrome.browser.sync.\lChromiumSyncAdapterService"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	SharedPreferences -> "org.chromium.chrome.browser.accessibility.\lFontSizePrefs"
-		[color=darkorchid3,
-		dir=back,
-		label=" mSharedPreferences",
-		style=dashed];
-
-	SpannableString -> "org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel.LanguageArray\lAdapter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTextTemplate",
-		style=dashed];
-
-	Spinner -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mFontFamilySpinner",
-		style=dashed];
-
-	Spinner -> "org.chromium.chrome.browser.infobar.\lTranslateLanguagePanel"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTargetSpinner\nmSourceSpinner",
-		style=dashed];
-
-	"Stack\< Node \>" -> "org.chromium.chrome.browser.omaha.\lXMLParser"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTagStack",
-		style=dashed];
-
-	TextView -> "org.chromium.chrome.browser.\lJavascriptAppModalDialog"
-		[color=darkorchid3,
-		dir=back,
-		label=" mPromptTextView",
-		style=dashed];
-
-	TextView -> "org.chromium.chrome.browser.\lWebsiteSettingsPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mUrlConnectionMessage\nmUrlTitle",
-		style=dashed];
-
-	TextView -> "org.chromium.chrome.browser.\lWebsiteSettingsPopupLegacy"
-		[color=darkorchid3,
-		dir=back,
-		label=" mCertificateViewer\nmMoreInfoLink",
-		style=dashed];
-
-	TextView -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=darkorchid3,
-		dir=back,
+	"TextView" -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mTitleView",
-		style=dashed];
+		style="dashed"];
 
-	TextView -> "org.chromium.chrome.browser.dom\l_distiller.DistilledPagePrefsView"
-		[color=darkorchid3,
-		dir=back,
-		label=" mFontScaleTextView",
-		style=dashed];
-
-	TextView -> "org.chromium.chrome.browser.infobar.\lInfoBarLayout"
-		[color=darkorchid3,
-		dir=back,
-		label=" mMessageView",
-		style=dashed];
-
-	TextView -> "org.chromium.chrome.browser.widget.accessibility.\lAccessibilityTabModelListItem"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTitleView",
-		style=dashed];
-
-	TimeAnimator -> "org.chromium.chrome.browser.appmenu.\lAppMenuDragHelper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mDragScrolling",
-		style=dashed];
-
-	UriMatcher -> "org.chromium.chrome.browser.\lChromeBrowserProvider"
-		[color=darkorchid3,
-		dir=back,
-		label=" mUriMatcher",
-		style=dashed];
-
-	Uri -> "org.chromium.chrome.browser.\lChromeBrowserProvider"
-		[color=darkorchid3,
-		dir=back,
-		label=" BROWSER_CONTRACTS_COMBINED\l_API_URI\nBROWSER_CONTRACTS_BOOKMAKRS\l_API_URI\nBROWSER_CONTRACTS_SEARCHES\l_API_URI\nBROWSER_CONTRACTS_\
-HISTORY\l_API_URI",
-		style=dashed];
-
-	"View::OnClickListener" -> "org.chromium.chrome.browser.infobar.\lInfoBarLayout"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	ViewGroup -> "org.chromium.chrome.browser.\lWebsiteSettingsPopupLegacy"
-		[color=darkorchid3,
-		dir=back,
-		label=" mCertificateLayout\nmDescriptionLayout",
-		style=dashed];
-
-	ViewGroup -> "org.chromium.chrome.browser.infobar.\lInfoBarContainer"
-		[color=darkorchid3,
-		dir=back,
-		label=" mParentView",
-		style=dashed];
-
-	ViewGroup -> "org.chromium.chrome.browser.infobar.\lInfoBarLayout"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	View -> "org.chromium.chrome.browser.\lWebsiteSettingsPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mHorizontalSeparator\nmLowerDialogArea",
-		style=dashed];
-
-	View -> "org.chromium.chrome.browser.banners.\lAppBannerView"
-		[color=darkorchid3,
-		dir=back,
+	"View" -> "org.chromium.chrome.browser.banners.\lAppBannerView"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mBannerHighlightView\nmLogoView",
-		style=dashed];
+		style="dashed"];
 
-	View -> "org.chromium.chrome.browser.banners.\lRatingView"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
+	"View" -> "org.chromium.chrome.browser.banners.\lRatingView"
+		[color="midnightblue",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
+		style="solid"];
 
-	View -> "org.chromium.chrome.browser.infobar.\lAnimationHelper"
-		[color=darkorchid3,
-		dir=back,
+	"View" -> "org.chromium.chrome.browser.infobar.\lAnimationHelper"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mToShow",
-		style=dashed];
+		style="dashed"];
 
-	View -> "org.chromium.chrome.browser.infobar.\lContentWrapperView"
-		[color=darkorchid3,
-		dir=back,
+	"View" -> "org.chromium.chrome.browser.infobar.\lContentWrapperView"
+		[color="darkorchid3",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
 		label=" mViewToHide\nmViewToShow",
-		style=dashed];
+		style="dashed"];
 
-	View -> "org.chromium.chrome.browser.infobar.\lInfoBarLayout.Group"
-		[color=darkorchid3,
-		dir=back,
-		label=" views",
-		style=dashed];
-
-	"ViewTreeObserver::OnGlobal\lLayoutListener" -> "org.chromium.chrome.browser.infobar.\lAnimationHelper"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	"WeakReference\< org.chromium.chrome.browser.\lTab \>" -> "org.chromium.chrome.browser.printing.\lTabPrinter"
-		[color=darkorchid3,
-		dir=back,
-		label=" mTab",
-		style=dashed];
-
-	WebContentsDelegateAndroid -> "org.chromium.chrome.browser.\lChromeWebContentsDelegateAndroid"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	WebContentsObserver -> "org.chromium.chrome.browser.\lTab.TabWebContentsObserver"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	WebContentsObserver -> "org.chromium.chrome.browser.\lVoiceSearchTabHelper"
-		[color=midnightblue,
-		dir=back,
-		style=solid];
-
-	WebContentsObserver -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
-		label=" mWebContentsObserver",
-		style=dashed];
-
-	WebContents -> "org.chromium.chrome.browser.\lVoiceSearchTabHelper"
-		[color=darkorchid3,
-		dir=back,
-		label=" mWebContents",
-		style=dashed];
-
-	WebContents -> "org.chromium.chrome.browser.\lWebsiteSettingsPopup"
-		[color=darkorchid3,
-		dir=back,
-		label=" mWebContents",
-		style=dashed];
-
-	WebContents -> "org.chromium.chrome.browser.\lWebsiteSettingsPopupLegacy"
-		[color=darkorchid3,
-		dir=back,
-		label=" mWebContents",
-		style=dashed];
-
-	WebContents -> "org.chromium.chrome.browser.findinpage.\lFindInPageBridge"
-		[color=darkorchid3,
-		dir=back,
-		label=" mWebContents",
-		style=dashed];
-
-	WindowAndroid -> "org.chromium.chrome.browser.Tab"
-		[color=darkorchid3,
-		dir=back,
-		label=" mWindowAndroid",
-		style=dashed];
+	"WebContentsObserver" -> "org.chromium.chrome.browser.\lVoiceSearchTabHelper"
+		[color="midnightblue",
+		dir="back",
+		fontname="Helvetica",
+		fontsize="8",
+		style="solid"];
 
 	{ rank=same; 0 [style=invis] }
 	edge [style=invis];

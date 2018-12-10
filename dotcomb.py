@@ -205,7 +205,6 @@ def print_edges(edges):
     """
     # Remove quotes and convert to lower case for a more logical order
     sorted_edges = sorted(edges.items(), key=lambda k: (k[0][0]+k[0][1]).replace('"', '').lower())
-    logging.info(sorted_edges)
     for k, v in sorted_edges:
         sorted_values = sorted(v.items())
         print("\t{} -> {}\n\t\t[{}];\n".format(k[0], k[1], ',\n\t\t'.join([k+'='+v2 for
@@ -230,7 +229,7 @@ def main(argv):
     nodes = {}
     edges = {}
 
-    logging.basicConfig(filename='dotcomb.log', filemode='w', level=logging.DEBUG)
+    logging.basicConfig(filename='dotcomb.log', filemode='w', level=logging.INFO)
 
     params = read_params(argv)
 
@@ -270,7 +269,7 @@ def main(argv):
     print("{}".format(settings['HEADER']))
     print_nodes(cleaned_nodes, edges)
     print_edges(cleaned_edges)
-    if params['cluster'] == False and 'PACKAGE_COLORS' in settings:
+    if params['cluster'] is False and 'PACKAGE_COLORS' in settings:
         print_legend(settings['PACKAGE_COLORS'])
     print("{}".format(settings['FOOTER']))
 
