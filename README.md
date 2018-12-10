@@ -16,11 +16,13 @@ by a class in an attribute ("OtherClasss other").
 
 See the example file (chromium.png) for an example.
 
-## Requiremens
+## Requirements
 * Python3
-* PyYAML
+* PyYAML (with pip3)
 * Doxygen
 * Graphviz
+* antlr4
+* antlr4-python3-runtime (with pip3)
 
 ## Usage
 
