@@ -8,14 +8,17 @@ from collections import namedtuple
 import argparse
 import itertools
 import yaml
+from DOTReader import *
+from DOTLexer import DOTLexer
+from DOTParser import DOTParser
+import logging
 
 params = {}
 
-nodes = {}
-edges = {}
 file_mappings = {}
 settings_file = 'settings.yaml'
 settings = {}
+printer = None
 
 
 def pkg_name(x):
@@ -48,9 +51,8 @@ def show_node(node_label):
     with FILTERED_RE_NODES (regular expression matching) and
     FILTERED_EXACT_NODES (exact string match).
     """
-    if params['filter'] == True:
-        if len([x for x in settings['FILTERED_RE_NODES'] if node_label.find(x)
-            != -1]) > 0:
+    if params['filter'] is True:
+        if len([x for x in settings['FILTERED_RE_NODES'] if node_label.find(x) != -1]) > 0:
             return False
         if node_label in settings['FILTERED_EXACT_NODES']:
             return False
@@ -81,7 +83,7 @@ def set_params(node):
         node['group'] = group.replace('.', '')
 
 
-def has_edges(node_label):
+def has_edges(node_label, edges):
     """
     Checks if given node name has any edges. Nodes with no edges are not added
     to the graph.
@@ -145,19 +147,19 @@ def create_edge(edge):
             edges[(n1, n2)] = d
 
 
-def print_node(key, node):
+def print_node(key, node, edges):
     """
     Prints a single node.
     """
-    if has_edges(key):
+    if has_edges(key, edges):
         print("\t{}\n\t\t[{}];\n".format(key, ',\n\t\t'.join([key+'='+v for
-            key,v in node[1].items()])))
+            key,v in sorted(node[1].items())])))
 
 
 cluster = 0
 
 
-def print_subgraph(k, g):
+def print_subgraph(k, g, edges):
     """
     Prints subgraph info if -c command-line parameter was supplied, otherwise
     just prints each node in a group at once.
@@ -171,33 +173,43 @@ def print_subgraph(k, g):
         else:
             print('\t\tlabel=\"\";')
     for node in g:
-        print_node(node[0], node)
+        print_node(node[0], node, edges)
     if params['cluster']:
         print('\t}')
         cluster = cluster + 1
 
 
 def sort_func(x):
-    return pkg_name(x[0])
+    """
+    Return package name if clustering is defined, otherwise label name in lower case
+    """
+    if params['cluster'] is True:
+        return pkg_name(x[0].lower())
+    else:
+        return x[0].lower()
 
 
-def print_nodes():
+def print_nodes(nodes, edges):
     """
     Prints all nodes sorted by group.
     """
     sorted_nodes = [d for d in nodes.items()]
     sorted_nodes.sort(key=sort_func)
     for k,v in itertools.groupby(sorted_nodes, sort_func):
-        print_subgraph(k,list(v))
+        print_subgraph(k,list(v), edges)
 
 
-def print_edges():
+def print_edges(edges):
     """
     Prints all edges.
     """
-    for k, v in edges.items():
+    # Remove quotes and convert to lower case for a more logical order
+    sorted_edges = sorted(edges.items(), key=lambda k: (k[0][0]+k[0][1]).replace('"', '').lower())
+    logging.info(sorted_edges)
+    for k, v in sorted_edges:
+        sorted_values = sorted(v.items())
         print("\t{} -> {}\n\t\t[{}];\n".format(k[0], k[1], ',\n\t\t'.join([k+'='+v2 for
-            k,v2 in v.items()])))
+            k,v2 in sorted_values])))
 
 
 def print_legend(components):
@@ -215,39 +227,53 @@ def print_legend(components):
 def main(argv):
     global params
     global settings
+    nodes = {}
+    edges = {}
+
+    logging.basicConfig(filename='dotcomb.log', filemode='w', level=logging.DEBUG)
 
     params = read_params(argv)
 
     with open(settings_file, 'r') as f:
         settings = yaml.load(f)
 
-    input_path = params['directory'] + '/**/*.dot'
+    input_path = params['directory'] + '/**/*__coll*.dot'
     files = glob.glob(input_path, recursive=True)
     for fname in files:
-        lines = []
-        with open(fname) as f:
-            dotfile = f.read()
+        inp = FileStream(fname)
+        lexer = DOTLexer(inp)
+        stream = CommonTokenStream(lexer)
+        parser = DOTParser(stream)
+        tree = parser.graph()
+        printer = DOTReader(settings, params)
+        walker = ParseTreeWalker()
+        walker.walk(printer, tree)
+        nodes = {**nodes, **printer.nodes}
+        edges = {**edges, **printer.edges}
+        logging.info('%s: nodes %s, edges %s',
+                fname, len(printer.nodes), len(printer.edges))
+        logging.debug("%s", pprint.pformat(printer.edges))
+        printer.next_file()
 
+    cleaned_edges = {}
+    cleaned_nodes = {}
+    # Remove edges that have no nodes
+    #cleaned_edges = {(n1, n2):v for ((n1, n2),v) in edges.items() if (n1 in nodes) and (n2 in nodes)}
+    for (n1, n2), edge in edges.items():
+        if (n1 in nodes) and (n2 in nodes):
+            cleaned_edges[(n1, n2)] = edge
+    for key, node in nodes.items():
+        if has_edges(key, cleaned_edges):
+            cleaned_nodes[key] = node
 
-        # Get nodes
-        p = re.compile(r'\n\s+(Node\d+)\s+\[(.+?)\];', re.DOTALL|re.MULTILINE)
-        for node in p.finditer(dotfile):
-            create_node(node)
-
-        #  Get edges
-        p = re.compile(r'\n\s+(Node\d+)\s+->\s+(Node\d+)\s+\[(.+?)\];',
-                re.DOTALL|re.MULTILINE)
-        for edge in p.finditer(dotfile):
-            create_edge(edge)
-        file_mappings.clear()
-
+    logging.info('Nodes: %s, edges: %s', len(nodes), len(edges))
     print("{}".format(settings['HEADER']))
-    print_nodes()
-    print_edges()
+    print_nodes(cleaned_nodes, edges)
+    print_edges(cleaned_edges)
     if params['cluster'] == False and 'PACKAGE_COLORS' in settings:
         print_legend(settings['PACKAGE_COLORS'])
     print("{}".format(settings['FOOTER']))
 
 
 if __name__ == '__main__':
-   main(sys.argv[1:])
+    main(sys.argv[1:])
