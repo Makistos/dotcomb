@@ -54,7 +54,7 @@ def show_node(node_label):
     if params['filter'] is True:
         if len([x for x in settings['FILTERED_RE_NODES'] if node_label.find(x) != -1]) > 0:
             return False
-        if node_label in settings['FILTERED_EXACT_NODES']:
+        if node_label.replace('"', '') in settings['FILTERED_EXACT_NODES']:
             return False
         return True
     else:
@@ -259,13 +259,19 @@ def main(argv):
     # Remove edges that have no nodes
     #cleaned_edges = {(n1, n2):v for ((n1, n2),v) in edges.items() if (n1 in nodes) and (n2 in nodes)}
     for (n1, n2), edge in edges.items():
-        if (n1 in nodes) and (n2 in nodes):
-            cleaned_edges[(n1, n2)] = edge
+        if show_node(n1) and show_node(n2):
+            if (n1 in nodes) and (n2 in nodes):
+                cleaned_edges[(n1, n2)] = edge
     for key, node in nodes.items():
         if has_edges(key, cleaned_edges):
             cleaned_nodes[key] = node
 
-    logging.info('Nodes: %s, edges: %s', len(nodes), len(edges))
+    node_names = []
+    for k,v in cleaned_nodes.items():
+        node_names.append(k)
+    logging.info('Node list: %s', '\n'.join(node_names))
+    logging.info('Filter list: %s', settings['FILTERED_EXACT_NODES'])
+    logging.info('Nodes: %s, edges: %s', len(cleaned_nodes), len(cleaned_edges))
     print("{}".format(settings['HEADER']))
     print_nodes(cleaned_nodes, edges)
     print_edges(cleaned_edges)

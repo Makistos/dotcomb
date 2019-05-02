@@ -103,7 +103,7 @@ class DOTReader(DOTListener):
         if self._params['filter'] == True:
             if len([x for x in self._settings['FILTERED_RE_NODES'] if node_label.find(x) != -1]) > 0:
                 return False
-            if node_label in self._settings['FILTERED_EXACT_NODES']:
+            if node_label.replace('"', '') in self._settings['FILTERED_EXACT_NODES']:
                 return False
             return True
         else:

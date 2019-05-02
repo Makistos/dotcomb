@@ -1,5 +1,5 @@
 GROUP_RE_PATTERN: 
-    .+org.chromium.chrome.browser(\.\w+\.)
+    .com.cardiscope(\.\w+\.)
 
 HEADER: >
     digraph "G" {
@@ -24,24 +24,33 @@ FOOTER: >
 
 FILTERED_FIELDS: [URL]
 
-FILTERED_RE_NODES: []
+FILTERED_RE_NODES: [.view., tukaani, SidePanel]
 
-FILTERED_EXACT_NODES: [String, int, File, Boolean, boolean, Date,
-                        long, Object, short, double, byte, float]
+FILTERED_EXACT_NODES: [String, int, File, RandomAccessFile, Boolean, boolean, Date,
+                        long, Object, short, double, byte, float,
+                        JPopupMenu, BufferedImage, Color, Timer,
+                        DataOutputStream, JFrame, JTextField, Border, FilesSystemView,
+                        Socket, OutputStream, Runnable, Cloneable, DataInput, Closeable,
+                        JTable, InputStream, Cursor, SimpleDateFormat, JPanel, JButton,
+                        JFrame, JPaneEx, JPopupMenu, FileSystemView,
+                        ComponentListener, dblClickListener, ActionListener, MouseListener,
+                        Border]
 
 PROBLEM_NODES: [swing, JLabel, JScrollPane, JDialog, JPanel,
-                 Dialog, Graphic, graphic, Renderer, JComponent,
+                 Graphic, graphic, Renderer, JComponent,
                  Cursor, JFrame]
 
 PACKAGE_COLORS: 
-    .infobar.: blue1
-    .banners.: blueviolet
-    .widget.: coral3
-    .dom_distiller.: darkolivegreen
-    .accessibility.: dodgerblue4
-    .signin.: gold
-    .sync.: azure3
-    .appmenu: aquamarine3
+    .bdac.: blue1
+    .data.: blueviolet
+    .db.: coral3
+    .narrative.: darkolivegreen
+    .processor.: dodgerblue4
+    .utils.: gold
+    .crypt.: azure3
+    .JSON: aquamarine3
+    .view.: pink
+    .device.: yellow
     problem: red
     other: white
 
