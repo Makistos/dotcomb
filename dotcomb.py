@@ -38,6 +38,9 @@ def read_params(args):
     p = argparse.ArgumentParser()
     p.add_argument('--filter', '-f', help='Filter graph.', action='store_true',
             default=False)
+    p.add_argument('--level', '-l', help='Graph level', type=int, default=0)
+    p.add_argument('--bidir', '-b', help='Non-directional graph',
+            action='store_true', default=False)
     p.add_argument('--cluster', '-c', help='Cluster packages together.',
             action='store_true', default=False)
     p.add_argument('--directory', '-d', help='Work directory. Output is '
@@ -203,11 +206,12 @@ def print_edges(edges):
     """
     Prints all edges.
     """
+    arrow = '->'
     # Remove quotes and convert to lower case for a more logical order
     sorted_edges = sorted(edges.items(), key=lambda k: (k[0][0]+k[0][1]).replace('"', '').lower())
     for k, v in sorted_edges:
         sorted_values = sorted(v.items())
-        print("\t{} -> {}\n\t\t[{}];\n".format(k[0], k[1], ',\n\t\t'.join([k+'='+v2 for
+        print("\t{} {} {}\n\t\t[{}];\n".format(k[0], arrow, k[1], ',\n\t\t'.join([k+'='+v2 for
             k,v2 in sorted_values])))
 
 
@@ -215,7 +219,7 @@ def print_legend(components):
     print('\t{ rank=same; 0 [style=invis] }'
                 '\n\tedge [style=invis];'
                 '\n\tfontcolor=black;\n')
-    nodes = ' -> '.join(sorted(components)).replace('.', '')
+    nodes = '->'.join(sorted(components)).replace('.', '')
     print('\t{};'.format(nodes))
     for c in sorted(components):
         component = c.replace('.', '')
@@ -236,7 +240,8 @@ def main(argv):
     with open(settings_file, 'r') as f:
         settings = yaml.load(f)
 
-    input_path = params['directory'] + '/**/*__coll*.dot'
+    #input_path = params['directory'] + '/**/*__coll*.dot'
+    input_path = params['directory'] + '/**/*_cgraph*.dot'
     files = glob.glob(input_path, recursive=True)
     for fname in files:
         inp = FileStream(fname)

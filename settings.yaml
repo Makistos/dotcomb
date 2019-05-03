@@ -24,7 +24,7 @@ FOOTER: >
 
 FILTERED_FIELDS: [URL]
 
-FILTERED_RE_NODES: [.view., tukaani, SidePanel]
+FILTERED_RE_NODES: [.view, tukaani, SidePanel, help, theme]
 
 FILTERED_EXACT_NODES: [String, int, File, RandomAccessFile, Boolean, boolean, Date,
                         long, Object, short, double, byte, float,
@@ -50,7 +50,7 @@ PACKAGE_COLORS:
     .crypt.: azure3
     .JSON: aquamarine3
     .view.: pink
-    .device.: yellow
+    .webapi.: yellow
     problem: red
     other: white
 

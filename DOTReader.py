@@ -4,6 +4,7 @@ from DOTListener import DOTListener
 from DOTParser import DOTParser
 import sys
 import re
+import logging
 
 
 class DOTReader(DOTListener):
@@ -11,8 +12,7 @@ class DOTReader(DOTListener):
     _settings = {}
     _params = {}
     _curr_node = ''
-    _curr_edge = ''
-    _curr_edge2 = ''
+    _curr_edge = ()
 
     nodes = {}
     edges = {}
@@ -23,48 +23,86 @@ class DOTReader(DOTListener):
         self._params = params
 
     def enterNode_stmt(self, ctx:DOTParser.Node_stmtContext):
-        self._curr_node = ctx.node_id().getText()
-        self._curr_edge = ''
+        node_text = ctx.node_id().getText()
+        self._curr_node = node_text
+        self._curr_edge = ()
 
     def enterEdge_stmt(self, ctx:DOTParser.Edge_stmtContext):
-        self._curr_edge = ctx.node_id().getText()
-        self._curr_edge2 = ctx.edgeRHS().getText()[2:]
+        ''' Get the nodes for this edge '''
+        self._curr_edge = (ctx.node_id().getText(),
+                ctx.edgeRHS().getText()[2:])
         self._curr_node = ''
 
     def exitA_list(self, ctx:DOTParser.A_listContext):
         if self._curr_node != '':
             self._create_node(ctx)
-        elif self._curr_edge != '':
+        elif len(self._curr_edge) > 0:
             self._create_edge(ctx)
 
+    def exitGraph(self, ctx:DOTParser.GraphContext):
+        logging.debug('Exiting graph')
+        new_edges = {}
+        logging.debug('file_mappings: %s', self._file_mappings)
+        for key, edge in self.edges.items():
+            if key[0] in self._file_mappings and key[1] in self._file_mappings:
+                new_edges[(self._file_mappings[key[0]]),
+                    (self._file_mappings[key[1]])] = edge
+        for key, edge in new_edges.items():
+            is_unique = not (key[1], key[0]) in new_edges
+            logging.debug('is_unique: %s %s', is_unique, key)
+            if key[0] != key[1] and is_unique and key not in self.edges:
+                logging.info('Adding new edge %s', key)
+                self.edges[key] = edge
+            elif key[0] != key[1] and not is_unique:
+                if self._params['bidir']:
+                    logging.info('Altering existing edge %s', key)
+                    edge['dir'] = "both"
+                    if (key[1], key[0]) not in self.edges:
+                        self.edges[key] = edge
+                elif key not in self.edges:
+                    logging.info('Adding new edge %s', key)
+                    self.edges[key] = edge
+            elif key[0] == key[1]:
+                logging.debug('Removed self-referential link %s', key)
+
     def next_file(self):
-        self.nodes.clear()
-        self.edges.clear()
-        self._file_mappings.clear()
+        logging.debug('Next file')
+        #self.nodes.clear()
+        #self.edges.clear()
+        #self._file_mappings.clear()
         self._curr_node = ''
-        self._curr_edge = ''
-        self._curr_edge2 = ''
+        self._curr_edge = ()
 
     def _create_node(self, ctx:DOTParser.A_listContext):
+        logging.debug('Node %s', self._curr_node)
         attrs = {k: v for k,v in
                 dict(zip([x.getText() for x in ctx.r_id()],
                          [x.getText() for x in ctx.v_id()])).items()
                 if not k in self._settings['FILTERED_FIELDS']}
         self._set_params(attrs)
-        label = attrs['label']
+        if self._params['level'] == 0:
+            label = attrs['label']
+        else:
+            label = '.'.join(attrs['label'].split('.')[0:self._params['level']])
+            if label[-1] != '"':
+                # If there are more parts in the label that level, then the
+                # closing quotation mark disappears.
+                label = label + '"'
         if not self._curr_node in self._file_mappings:
             self._file_mappings[self._curr_node] = label
         if not label in self.nodes and self._show_node(label):
+            attrs['label'] = label
             self.nodes[label] = attrs
 
     def _create_edge(self, ctx:DOTParser.A_listContext):
+        logging.debug('Edge %s -> %s', self._curr_edge[0], self._curr_edge[1])
         attrs = {k: v for k,v in
                 dict(zip([x.getText() for x in ctx.r_id()],
                          [x.getText() for x in ctx.v_id()])).items()}
-        if self._curr_edge in self._file_mappings and self._curr_edge2 in self._file_mappings:
-            n1 = self._file_mappings[self._curr_edge]
-            n2 = self._file_mappings[self._curr_edge2]
-            self.edges[(n1, n2)] = attrs
+        n1 = self._curr_edge[0]
+        n2 = self._curr_edge[1]
+        self.edges[(n1, n2)] = attrs
+        logging.debug('Edges: %s', self.edges)
 
     def _edge_exists(self, node1, node2):
         return ((node1, node2) in self.edges or (node2, node1) in self.edges)

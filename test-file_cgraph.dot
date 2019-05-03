@@ -1,0 +1,20 @@
+
+digraph "dot.comb.example.test.class" {
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+
+	NodeA [label="dot.comb.example.test.classA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled"];
+	NodeB [label="dot.comb.example.test.classB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled"];
+	NodeC [label="dot.comb.example.test.classC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled"];
+	NodeD [label="dot.comb.example.test.classD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled"];
+	/* Test bidirectional arrows */
+	NodeA -> NodeB [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+	NodeB -> NodeA [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+	NodeC -> NodeD [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+	NodeD -> NodeC [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+
+	NodeA -> NodeC [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+	NodeB -> NodeC [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+
+}
