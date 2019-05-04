@@ -51,25 +51,22 @@ class DOTReader(DOTListener):
             is_unique = not (key[1], key[0]) in new_edges
             logging.debug('is_unique: %s %s', is_unique, key)
             if key[0] != key[1] and is_unique and key not in self.edges:
-                logging.info('Adding new edge %s', key)
+                logging.debug('Adding new edge %s', key)
                 self.edges[key] = edge
             elif key[0] != key[1] and not is_unique:
                 if self._params['bidir']:
-                    logging.info('Altering existing edge %s', key)
+                    logging.debug('Altering existing edge %s', key)
                     edge['dir'] = "both"
                     if (key[1], key[0]) not in self.edges:
                         self.edges[key] = edge
                 elif key not in self.edges:
-                    logging.info('Adding new edge %s', key)
+                    logging.debug('Adding new edge %s', key)
                     self.edges[key] = edge
             elif key[0] == key[1]:
                 logging.debug('Removed self-referential link %s', key)
 
     def next_file(self):
         logging.debug('Next file')
-        #self.nodes.clear()
-        #self.edges.clear()
-        #self._file_mappings.clear()
         self._curr_node = ''
         self._curr_edge = ()
 

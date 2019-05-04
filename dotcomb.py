@@ -3,7 +3,7 @@
 import sys
 import glob
 import re
-import pprint
+#import pprint
 from collections import namedtuple
 import argparse
 import itertools
@@ -19,32 +19,22 @@ file_mappings = {}
 settings_file = 'settings.yaml'
 settings = {}
 printer = None
-
-
-def pkg_name(x):
-    """
-    Returns matching clustering value or empty string is string doesn't
-    match pattern.
-    """
-    p = re.findall(settings['GROUP_RE_PATTERN'], x)
-    if p:
-        return p[0]
-    else:
-        return ''
+cluster = 0
 
 
 def read_params(args):
     """ Handle command-line parameters."""
     p = argparse.ArgumentParser()
     p.add_argument('--filter', '-f', help='Filter graph.', action='store_true',
-            default=False)
-    p.add_argument('--level', '-l', help='Graph level', type=int, default=0)
+            default=True)
+    p.add_argument('--level', '-l', help='Graph level', type=int, default=4)
     p.add_argument('--bidir', '-b', help='Non-directional graph',
-            action='store_true', default=False)
+            action='store_true', default=True)
     p.add_argument('--cluster', '-c', help='Cluster packages together.',
             action='store_true', default=False)
     p.add_argument('--directory', '-d', help='Work directory. Output is '
-            'to stdout.', default='./');
+            'to stdout.',
+            default='/home/mep/src/Cardiac-Navigator/workspace/cardiscope-framework/)');
     return vars(p.parse_args(args))
 
 
@@ -95,61 +85,6 @@ def has_edges(node_label, edges):
         k for k in edges.keys() if k[0] == node_label or k[1] == node_label]) > 0
 
 
-def create_node(node):
-    """
-    Creates the nodes as a data structure where key is the node label
-    and value is a dictionary holding all the other values. This function
-    also updates the file specific file_mappings dictionary that is used to convert NodeXX
-    to node label (these are different for each file).
-    """
-    d = {}
-    v = ''
-    k = ''
-    items = node.group(2).split(',\n')
-    for item in items:
-        parts = item.split('=')
-        k = parts[0].lstrip()
-        v = parts[1].lstrip()
-        if k not in settings['FILTERED_FIELDS']:
-            d[k] = v
-    if 'fillcolor' in d:
-        del d['fillcolor']
-    set_params(d)
-    if not node.group(1) in file_mappings:
-        file_mappings[node.group(1)] = d['label']
-    if not d['label'] in nodes and show_node(d['label']):
-        nodes[d['label']] = d
-
-
-edge_exists = lambda node1, node2: (node1, node2) in edges or (node2,
-    node1) in edges
-
-
-def create_edge(edge):
-    """
-    Creates the edges as a data structure where the key is a tuple
-    consisting of the two nodes (converted to their real names instead of
-    NodeXX) and a dictionary holding the other values.
-
-    Also makes sure edges are only added once and that each edge has a
-    starting point and ending point in the graph.
-    """
-    d = {}
-    v = ''
-    k = ''
-    items = edge.group(3).split(',\n')
-    for item in items:
-        parts = item.split('=')
-        k = parts[0].lstrip()
-        v = parts[1].lstrip()
-        d[k] = v
-    if edge.group(1) in file_mappings and edge.group(2) in file_mappings:
-        n1 = file_mappings[edge.group(1)]
-        n2 = file_mappings[edge.group(2)]
-        if (not (edge_exists(n1, n2))) and show_node(n1) and show_node(n2):
-            edges[(n1, n2)] = d
-
-
 def print_node(key, node, edges):
     """
     Prints a single node.
@@ -157,9 +92,6 @@ def print_node(key, node, edges):
     if has_edges(key, edges):
         print("\t{}\n\t\t[{}];\n".format(key, ',\n\t\t'.join([key+'='+v for
             key,v in sorted(node[1].items())])))
-
-
-cluster = 0
 
 
 def print_subgraph(k, g, edges):
@@ -256,7 +188,7 @@ def main(argv):
         edges = {**edges, **printer.edges}
         logging.info('%s: nodes %s, edges %s',
                 fname, len(printer.nodes), len(printer.edges))
-        logging.debug("%s", pprint.pformat(printer.edges))
+        #logging.debug("%s", pprint.pformat(printer.edges))
         printer.next_file()
 
     cleaned_edges = {}
