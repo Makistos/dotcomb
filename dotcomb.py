@@ -30,6 +30,8 @@ def read_params(args):
     p.add_argument('--level', '-l', help='Graph level', type=int, default=4)
     p.add_argument('--bidir', '-b', help='Non-directional graph',
             action='store_true', default=True)
+    p.add_argument('--type', '-t', help='Type of graph', choices=['collab',
+    'call_graph'], default='collab')
     p.add_argument('--cluster', '-c', help='Cluster packages together.',
             action='store_true', default=False)
     p.add_argument('--directory', '-d', help='Work directory. Output is '
@@ -173,7 +175,11 @@ def main(argv):
         settings = yaml.load(f)
 
     #input_path = params['directory'] + '/**/*__coll*.dot'
-    input_path = params['directory'] + '/**/*_cgraph*.dot'
+    if params['type'] == 'call_graph':
+        input_path = params['directory'] + '/**/*_cgraph*.dot'
+    elif params['type'] == 'collab':
+        input_path = params['directory'] + '/**/*__coll*.dot'
+
     files = glob.glob(input_path, recursive=True)
     for fname in files:
         inp = FileStream(fname)
