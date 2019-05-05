@@ -24,17 +24,24 @@ FOOTER: >
 
 FILTERED_FIELDS: [URL]
 
-FILTERED_RE_NODES: [.view, tukaani, SidePanel, help, theme]
+FILTERED_RE_NODES: [.view, tukaani, SidePanel, help, theme, ArrayList, ActionListener, JListi,
+                    Hashtable, Vector, ArrayList, HashMap, HashSet, TreeMap, Constructori,
+                    Map\< String, Comparable, JSONObject]
 
 FILTERED_EXACT_NODES: [String, int, File, RandomAccessFile, Boolean, boolean, Date,
-                        long, Object, short, double, byte, float,
-                        JPopupMenu, BufferedImage, Color, Timer,
+                        long, Object, short, double, byte, float, CommConnection,
+                        JPopupMenu, BufferedImage, Color, Timer, CommListener, Paint, Dimension,
                         DataOutputStream, JFrame, JTextField, Border, FilesSystemView,
                         Socket, OutputStream, Runnable, Cloneable, DataInput, Closeable,
                         JTable, InputStream, Cursor, SimpleDateFormat, JPanel, JButton,
-                        JFrame, JPaneEx, JPopupMenu, FileSystemView,
+                        JFrame, JPaneEx, JPopupMenu, FileSystemView, JComponent,
                         ComponentListener, dblClickListener, ActionListener, MouseListener,
-                        Border]
+                        Border, HashMap\< Integer, JSONObject \>, HashSet\< Integer \>, 
+                        ArrayList\< Object \>, Hashtable\< String,\l Double \>,
+                        Comparable\< Double \>, ArrayList\< Double \>, Hashtable\< String,\l Boolean \>,
+                        Hashtable\< String,\l Double \>, HashMap\< Integer, JSONObject \>,
+                        Map\< String, HttpAsyncRequest\lHandler\< HttpRequest \> \>, ExecutorService,
+                        com.cardiscope.notification]
 
 PROBLEM_NODES: [swing, JLabel, JScrollPane, JDialog, JPanel,
                  Graphic, graphic, Renderer, JComponent,

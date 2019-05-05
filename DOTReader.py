@@ -59,6 +59,9 @@ class DOTReader(DOTListener):
                     edge['dir'] = "both"
                     if (key[1], key[0]) not in self.edges:
                         self.edges[key] = edge
+                    else:
+                        edge['label'] = edge['label'] + self.edges[(key[1],
+                            key[0]['label']
                 elif key not in self.edges:
                     logging.debug('Adding new edge %s', key)
                     self.edges[key] = edge
