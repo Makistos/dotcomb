@@ -5,17 +5,17 @@ HEADER: >
     digraph "G" {
         fontsize=96;
         graph [rankdir=LR,
-               label="Chromium",
+               label="$HEADER$",
                labelloc=top];
     node [fontname=Helvetica,
-        fontsize=8,
+        fontsize=10,
         label="",
         shape=record,
     ];
     edge [fontname=Helvetica,
-        fontsize=8,
+        fontsize=10,
         labelfontname=Helvetica,
-        labelfontsize=8
+        labelfontsize=10
     ];
 
 FOOTER: >
@@ -24,28 +24,48 @@ FOOTER: >
 
 FILTERED_FIELDS: [URL]
 
-FILTERED_RE_NODES: [.view, tukaani, SidePanel, help, theme, ArrayList, ActionListener, JListi,
-                    Hashtable, Vector, ArrayList, HashMap, HashSet, TreeMap, Constructori,
-                    Map\< String, Comparable, JSONObject]
+FILTERED_RE_NODES: [.view, tukaani, SidePanel, help, theme, ArrayList, Listener,
+                    Hashtable, Vector, ArrayList, 
+                    HashSet, Constructor, Stack,
+                    Comparable, JSONObject, IOException, sevenzip, Test,
+                    ListCellRenderer, ByReference, Notification, '.*Server\.log.*',
+                    '.*Map\\<.+',
+                    '.*J{1}[a-zA-Z]+.+']
 
-FILTERED_EXACT_NODES: [String, int, File, RandomAccessFile, Boolean, boolean, Date,
-                        long, Object, short, double, byte, float, CommConnection,
-                        JPopupMenu, BufferedImage, Color, Timer, CommListener, Paint, Dimension,
-                        DataOutputStream, JFrame, JTextField, Border, FilesSystemView,
-                        Socket, OutputStream, Runnable, Cloneable, DataInput, Closeable,
-                        JTable, InputStream, Cursor, SimpleDateFormat, JPanel, JButton,
-                        JFrame, JPaneEx, JPopupMenu, FileSystemView, JComponent,
-                        ComponentListener, dblClickListener, ActionListener, MouseListener,
-                        Border, HashMap\< Integer, JSONObject \>, HashSet\< Integer \>, 
-                        ArrayList\< Object \>, Hashtable\< String,\l Double \>,
-                        Comparable\< Double \>, ArrayList\< Double \>, Hashtable\< String,\l Boolean \>,
-                        Hashtable\< String,\l Double \>, HashMap\< Integer, JSONObject \>,
-                        Map\< String, HttpAsyncRequest\lHandler\< HttpRequest \> \>, ExecutorService,
-                        com.cardiscope.notification]
+FILTERED_EXACT_NODES: [ # Basic types 
+                        String, int, File, long, Object, short, double, byte, float,Boolean, boolean, Date,
+                        # UI elements
+                        #JPopupMenu, JFrame, JTextField, JTable, JScrollPane, JSplitPane, JLabel, JPanel, 
+                        #JFrame, JPaneEx, JPopupMenu, JComponent, JDialog, JProgressBar, JDateChooser, JDesktopPane,
+                        #JFormattedTextField, JDialog, JButton, JWindow, JToggleButton, JPasswordField, JTextArea,
+                        #JToggleButton, JCheckBox,
+                        Color, Timer, Paint, Font, DragSource, TexturePaint, Composite, CompositeContext,
+                        Border, Clip, BasicStroke, ListSelectionModel, FileSystemView, FilesSystemView,
+                        DefaultListModel, LayoutManager2, Graphics2D, DefaultListCellRenderer, DefaultTableCellRenderer,
+                        # Listeners
+                        #CommListener, ComponentListener, dblClickListener, ActionListener, MouseListener, DiscoveryListener,
+                        #LineListener, WindowListener, EventListener, MouseMotionListener, ListSelectionListener,
+                        # Adapters
+                        MouseAdapter,
+                        # Streams and files
+                        OutputStream, DataOutputStream, DataInput, InputStream, DataInputStream,RandomAccessFile, 
+                        ReadableByteChannel, PipedOutputStream, BufferedOutputStream, FileOutputStream, MappedByteBuffer,
+                        BufferedImage, BufferedInputStream, ZipOutputStream, ByteBuffer, DataOutput, PipedInputStream,
+                        # Database
+                        AbstractTableModel, PreparedStatement, Cursor, 
+                        # Others
+                        CommConnection, Connection, SSLServerSocket, ThreadFactory, Thread,
+                        Dimension, TimerTask,
+                        Socket, Runnable, Cloneable, Closeable, Transferable,
+                        SimpleDateFormat, Window, Point, 
+                        HttpAsyncRequest\lHandler\< HttpRequest \> \>, ExecutorService,
+                        com.cardiscope.notification, err, 
+                        Printable, PrintStream, ClipboardOwner, Colour, CRC32, Image, ImageTranscoder, TranscoderInput,
+                        UUID, Locale, Charset, Properties, SVGDocument,
+                        WString, Pointer, Structure, RuntimeException, CountDownLatch
+                        ]
 
-PROBLEM_NODES: [swing, JLabel, JScrollPane, JDialog, JPanel,
-                 Graphic, graphic, Renderer, JComponent,
-                 Cursor, JFrame]
+PROBLEM_NODES: [swing, Graphic, graphic, Cursor]
 
 PACKAGE_COLORS: 
     .bdac.: blue1
@@ -55,8 +75,8 @@ PACKAGE_COLORS:
     .processor.: dodgerblue4
     .utils.: gold
     .crypt.: azure3
-    .JSON: aquamarine3
-    .view.: pink
+    .license.: aquamarine3
+    .report.: pink
     .webapi.: yellow
     problem: red
     other: white

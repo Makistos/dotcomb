@@ -12,6 +12,7 @@ from DOTReader import *
 from DOTLexer import DOTLexer
 from DOTParser import DOTParser
 import logging
+import pprint
 
 params = {}
 
@@ -26,10 +27,10 @@ def read_params(args):
     """ Handle command-line parameters."""
     p = argparse.ArgumentParser()
     p.add_argument('--filter', '-f', help='Filter graph.', action='store_true',
-            default=True)
+            default=False)
     p.add_argument('--level', '-l', help='Graph level', type=int, default=4)
     p.add_argument('--bidir', '-b', help='Non-directional graph',
-            action='store_true', default=True)
+            action='store_true', default=False)
     p.add_argument('--type', '-t', help='Type of graph', choices=['collab',
     'call_graph'], default='collab')
     p.add_argument('--cluster', '-c', help='Cluster packages together.',
@@ -37,6 +38,9 @@ def read_params(args):
     p.add_argument('--directory', '-d', help='Work directory. Output is '
             'to stdout.',
             default='/home/mep/src/Cardiac-Navigator/workspace/cardiscope-framework/)');
+    p.add_argument('--header', help='Graph title', default='')
+    p.add_argument('--settings', '-s', help='Alternative settings file',
+            default='')
     return vars(p.parse_args(args))
 
 
@@ -166,15 +170,21 @@ def main(argv):
     global settings
     nodes = {}
     edges = {}
+    ignored_nodes = {}
 
-    logging.basicConfig(filename='dotcomb.log', filemode='w', level=logging.INFO)
+    logging.basicConfig(filename='dotcomb.log', filemode='w',
+            level=logging.INFO)
 
     params = read_params(argv)
 
     with open(settings_file, 'r') as f:
         settings = yaml.load(f)
 
-    #input_path = params['directory'] + '/**/*__coll*.dot'
+    if params['settings'] != '':
+        with open(params['settings'], 'r') as f:
+            alt_settings = yaml.load(f)
+        settings = {**settings, **alt_settings}
+
     if params['type'] == 'call_graph':
         input_path = params['directory'] + '/**/*_cgraph*.dot'
     elif params['type'] == 'collab':
@@ -192,15 +202,15 @@ def main(argv):
         walker.walk(printer, tree)
         nodes = {**nodes, **printer.nodes}
         edges = {**edges, **printer.edges}
-        logging.info('%s: nodes %s, edges %s',
-                fname, len(printer.nodes), len(printer.edges))
+        ignored_nodes = {**ignored_nodes, **printer.ignored_nodes}
+        logging.info('%s:\n\t\t nodes %s, edges %s, ignored: %s',
+                fname.split('/')[5:], len(printer.nodes),
+                len(printer._file_edges), len(printer.ignored_nodes))
         #logging.debug("%s", pprint.pformat(printer.edges))
         printer.next_file()
 
     cleaned_edges = {}
     cleaned_nodes = {}
-    # Remove edges that have no nodes
-    #cleaned_edges = {(n1, n2):v for ((n1, n2),v) in edges.items() if (n1 in nodes) and (n2 in nodes)}
     for (n1, n2), edge in edges.items():
         if show_node(n1) and show_node(n2):
             if (n1 in nodes) and (n2 in nodes):
@@ -209,13 +219,17 @@ def main(argv):
         if has_edges(key, cleaned_edges):
             cleaned_nodes[key] = node
 
-    node_names = []
-    for k,v in cleaned_nodes.items():
-        node_names.append(k)
-    logging.info('Node list: %s', '\n'.join(node_names))
-    logging.info('Filter list: %s', settings['FILTERED_EXACT_NODES'])
+    # Print some info to log
     logging.info('Nodes: %s, edges: %s', len(cleaned_nodes), len(cleaned_edges))
-    print("{}".format(settings['HEADER']))
+    l = sorted(list(cleaned_nodes.keys()))
+    logging.info('Node list: %s', '\n\t'.join(l))
+    logging.info('Filter list: %s', settings['FILTERED_EXACT_NODES'])
+    l = sorted(list(ignored_nodes.keys()))
+    logging.info('Ignored nodes: %s', '\n\t'.join(l))
+
+    # Create dot file
+    header = settings['HEADER'].replace('$HEADER$', params['header'])
+    print("{}".format(header))
     print_nodes(cleaned_nodes, edges)
     print_edges(cleaned_edges)
     if params['cluster'] is False and 'PACKAGE_COLORS' in settings:
