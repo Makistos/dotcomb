@@ -27,10 +27,10 @@ FILTERED_FIELDS: [URL]
 FILTERED_RE_NODES: [.view, tukaani, SidePanel, help, theme, ArrayList, Listener,
                     Hashtable, Vector, ArrayList, 
                     HashSet, Constructor, Stack,
-                    Comparable, JSONObject, IOException, sevenzip, Test,
+                    Comparable, JSONObject, IOException, '.*\.sevenzip\..*', Test,
                     ListCellRenderer, ByReference, Notification, '.*Server\.log.*',
                     '.*Map\\<.+',
-                    '.*J{1}[a-zA-Z]+.+']
+                    '.*J[a-zA-Z]+.+']
 
 FILTERED_EXACT_NODES: [ # Basic types 
                         String, int, File, long, Object, short, double, byte, float,Boolean, boolean, Date,
@@ -64,6 +64,9 @@ FILTERED_EXACT_NODES: [ # Basic types
                         UUID, Locale, Charset, Properties, SVGDocument,
                         WString, Pointer, Structure, RuntimeException, CountDownLatch
                         ]
+
+FILTER_IGNORE: [ # Example: '.*MouseAdapter.*' 
+                ]
 
 PROBLEM_NODES: [swing, Graphic, graphic, Cursor]
 

@@ -21,6 +21,7 @@ class DOTReader(DOTListener):
     _file_edges = {}
 
     _patterns = []
+    _ignore_list = []
 
     _file_mappings = {} # Maps NodeXX with real labels. Files might have different node names for same labels.
 
@@ -28,6 +29,7 @@ class DOTReader(DOTListener):
         self._settings = settings
         self._params = params
         self._patterns = [re.compile(x, re.LOCALE|re.MULTILINE) for x in self._settings['FILTERED_RE_NODES']]
+        self._ignore_list = [re.compile(x, re.LOCALE|re.MULTILINE) for x in self._settings['FILTER_IGNORE']]
 
     def enterNode_stmt(self, ctx:DOTParser.Node_stmtContext):
         node_text = ctx.node_id().getText()
@@ -159,14 +161,19 @@ class DOTReader(DOTListener):
         FILTERED_EXACT_NODES (exact string match).
         """
         if self._params['filter'] == True:
+            for p in self._ignore_list:
+                m = p.match(node_label)
+                if m:
+                    logging.info('Allowing %s', node_label)
+                    return True
             for p in self._patterns:
                 m = p.match(node_label)
                 if m:
-                    logging.info('Ignoring node %s', node_label)
+                    logging.debug('Ignoring node %s', node_label)
                     self.ignored_nodes[node_label] = node_label
                     return False
             if node_label.replace('"', '') in self._settings['FILTERED_EXACT_NODES']:
-                logging.info('Ignoring node %s', node_label)
+                logging.debug('Ignoring node %s', node_label)
                 self.ignored_nodes[node_label] = node_label
                 return False
             return True
