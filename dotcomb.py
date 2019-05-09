@@ -35,9 +35,10 @@ def read_params(args):
     'call_graph'], default='collab')
     p.add_argument('--cluster', '-c', help='Cluster packages together.',
             action='store_true', default=False)
-    p.add_argument('--directory', '-d', help='Work directory. Output is '
-            'to stdout.',
+    p.add_argument('--directory', '-d', help='Work directory.',
             default='/home/mep/src/Cardiac-Navigator/workspace/cardiscope-framework/)');
+    p.add_argument('--output', '-o', help='Output file name. Default stdout.',
+            default='')
     p.add_argument('--header', help='Graph title', default='')
     p.add_argument('--settings', '-s', help='Alternative settings file',
             default='')
@@ -91,32 +92,32 @@ def has_edges(node_label, edges):
         k for k in edges.keys() if k[0] == node_label or k[1] == node_label]) > 0
 
 
-def print_node(key, node, edges):
+def print_node(key, node, edges, f):
     """
     Prints a single node.
     """
     if has_edges(key, edges):
         print("\t{}\n\t\t[{}];\n".format(key, ',\n\t\t'.join([key+'='+v for
-            key,v in sorted(node[1].items())])))
+            key,v in sorted(node[1].items())])), file = f)
 
 
-def print_subgraph(k, g, edges):
+def print_subgraph(k, g, edges, f):
     """
     Prints subgraph info if -c command-line parameter was supplied, otherwise
     just prints each node in a group at once.
     """
     global cluster
     if params['cluster']:
-        print('\tsubgraph cluster_{} {{'.format(cluster))
+        print('\tsubgraph cluster_{} {{'.format(cluster), file = f)
         if len(k) > 0:
-            print('\t\tlabel={};'.format(k))
-            print('\t\tfontsize=48;')
+            print('\t\tlabel={};'.format(k), file = f)
+            print('\t\tfontsize=48;', file = f)
         else:
-            print('\t\tlabel=\"\";')
+            print('\t\tlabel=\"\";', file = f)
     for node in g:
-        print_node(node[0], node, edges)
+        print_node(node[0], node, edges, f)
     if params['cluster']:
-        print('\t}')
+        print('\t}', file = f)
         cluster = cluster + 1
 
 
@@ -130,17 +131,17 @@ def sort_func(x):
         return x[0].lower()
 
 
-def print_nodes(nodes, edges):
+def print_nodes(nodes, edges, f):
     """
     Prints all nodes sorted by group.
     """
     sorted_nodes = [d for d in nodes.items()]
     sorted_nodes.sort(key=sort_func)
     for k,v in itertools.groupby(sorted_nodes, sort_func):
-        print_subgraph(k,list(v), edges)
+        print_subgraph(k,list(v), edges, f)
 
 
-def print_edges(edges):
+def print_edges(edges, f):
     """
     Prints all edges.
     """
@@ -150,19 +151,19 @@ def print_edges(edges):
     for k, v in sorted_edges:
         sorted_values = sorted(v.items())
         print("\t{} {} {}\n\t\t[{}];\n".format(k[0], arrow, k[1], ',\n\t\t'.join([k+'='+v2 for
-            k,v2 in sorted_values])))
+            k,v2 in sorted_values])), file=f)
 
 
-def print_legend(components):
+def print_legend(components, f):
     print('\t{ rank=same; 0 [style=invis] }'
                 '\n\tedge [style=invis];'
-                '\n\tfontcolor=black;\n')
+                '\n\tfontcolor=black;\n', file = f)
     nodes = '->'.join(sorted(components)).replace('.', '')
-    print('\t{};'.format(nodes))
+    print('\t{};'.format(nodes), file = f)
     for c in sorted(components):
         component = c.replace('.', '')
         print('\t{} [label={}, color={}, style=filled, fontsize=24];'
-                .format(component, component, components[c]))
+                .format(component, component, components[c]), file = f)
 
 
 def main(argv):
@@ -171,19 +172,27 @@ def main(argv):
     nodes = {}
     edges = {}
     ignored_nodes = {}
+    orig_stdout = sys.stdout
+    f_stdout = orig_stdout
 
     logging.basicConfig(filename='dotcomb.log', filemode='w',
             level=logging.INFO)
 
     params = read_params(argv)
 
+    if params['output'] != '':
+        f_stdout = open(params['output'], 'w')
+
     with open(settings_file, 'r') as f:
         settings = yaml.load(f)
 
     if params['settings'] != '':
-        with open(params['settings'], 'r') as f:
-            alt_settings = yaml.load(f)
-        settings = {**settings, **alt_settings}
+        try:
+            with open(params['settings'], 'r') as f:
+                alt_settings = yaml.load(f)
+            settings = {**settings, **alt_settings}
+        except FileNotFoundError:
+            print('File not found: {}', params['settings'], file=f_stdout)
 
     if params['type'] == 'call_graph':
         input_path = params['directory'] + '/**/*_cgraph*.dot'
@@ -229,12 +238,14 @@ def main(argv):
 
     # Create dot file
     header = settings['HEADER'].replace('$HEADER$', params['header'])
-    print("{}".format(header))
-    print_nodes(cleaned_nodes, edges)
-    print_edges(cleaned_edges)
+    print("{}".format(header), file=f_stdout)
+    print_nodes(cleaned_nodes, edges, f_stdout)
+    print_edges(cleaned_edges, f_stdout)
     if params['cluster'] is False and 'PACKAGE_COLORS' in settings:
-        print_legend(settings['PACKAGE_COLORS'])
-    print("{}".format(settings['FOOTER']))
+        print_legend(settings['PACKAGE_COLORS'], f_stdout)
+    print("{}".format(settings['FOOTER']), file=f_stdout)
+
+    sys.stdout = orig_stdout
 
 
 if __name__ == '__main__':
