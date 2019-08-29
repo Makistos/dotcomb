@@ -36,7 +36,7 @@ def read_params(args):
     p.add_argument('--cluster', '-c', help='Cluster packages together.',
             action='store_true', default=False)
     p.add_argument('--directory', '-d', help='Work directory.',
-            default='/home/mep/src/Cardiac-Navigator/workspace/cardiscope-framework/)');
+            default='/tmp/');
     p.add_argument('--output', '-o', help='Output file name. Default stdout.',
             default='')
     p.add_argument('--header', help='Graph title', default='')
